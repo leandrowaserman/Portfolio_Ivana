@@ -1,6 +1,4 @@
 
-
-
 let botonIngles = document.getElementById("btn_ingles")
 let botonEspañol = document.getElementById("btn_español")
 
