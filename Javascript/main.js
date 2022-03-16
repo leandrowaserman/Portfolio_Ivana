@@ -1,12 +1,3 @@
-
-<<<<<<< HEAD
-
-
-=======
-let botonIngles = document.getElementById("btn_ingles")
-let botonEspañol = document.getElementById("btn_español")
->>>>>>> e20e5ffb8fc7275b1b3b3ef77854bf284f03f1a3
-
 function checkLanguage(){
     const ingles = document.getElementsByClassName("english")
     const español = document.getElementsByClassName("spanish")
