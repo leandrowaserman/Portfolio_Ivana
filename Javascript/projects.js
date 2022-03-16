@@ -1,43 +1,59 @@
-const brandingPro = document.querySelector('#branding')
-const digitalPro = document.querySelector('#digital')
-const comunicacionPro = document.querySelector('#comunicacion')
-const sectionPro1 = document.querySelector('.projects_branding')
-const sectionPro2 = document.querySelector('.projects_digital')
-const sectionPro3 = document.querySelector('.projects_comunicacion')
+const brandingEsp = document.querySelector('#branding_esp')
+const digitalEsp = document.querySelector('#digital_esp')
+const comunicacionEsp = document.querySelector('#comunicacion_esp')
+const brandingIng = document.querySelector('#branding_ing')
+const digitalIng = document.querySelector('#digital_ing')
+const comunicacionIng = document.querySelector('#comunicacion_ing')
+
 
 function checkStatusPro(){
+    const section1 = document.getElementsByClassName('projects_branding')
+    const section2 = document.getElementsByClassName('projects_digital')
+    const section3 = document.getElementsByClassName('projects_comunicacion')
     if(localStorage.getItem('projects')=="branding"){
-        sectionPro1.style.display="block"
-        sectionPro2.style.display="none"
-        sectionPro3.style.display="none"
+        for(let i=0;i<section1.length;i++){
+            section1[i].style.display = "block"
+            section2[i].style.display = "none"
+            section3[i].style.display = "none"
+        }
     }else if (localStorage.getItem('projects')=="digital"){
-        sectionPro1.style.display="none"
-        sectionPro2.style.display="block"
-        sectionPro3.style.display="none"
+        for(let i=0;i<section1.length;i++){
+            section1[i].style.display = "none"
+            section2[i].style.display = "block"
+            section3[i].style.display = "none"
+        }
     }else if(localStorage.getItem('projects')=="comunicacion"){
-        sectionPro1.style.display="none"
-        sectionPro2.style.display="none"
-        sectionPro3.style.display="block"
+        for(let i=0;i<section1.length;i++){
+            section1[i].style.display = "none"
+            section2[i].style.display = "none"
+            section3[i].style.display = "block"
+        }
     }
 }
 
 
 
-brandingPro.addEventListener('mouseover', () => {
+brandingEsp.addEventListener('mouseover', () => {
     localStorage.setItem("projects","branding")
     checkStatusPro()
 })
-digitalPro.addEventListener('mouseover', () => {
+digitalEsp.addEventListener('mouseover', () => {
     localStorage.setItem("projects","digital")
     checkStatusPro()
 })
-comunicacionPro.addEventListener('mouseover', () => {
+comunicacionEsp.addEventListener('mouseover', () => {
     localStorage.setItem("projects","comunicacion")
     checkStatusPro()
 })
-botonEspañol.addEventListener('click', () =>{
+brandingIng.addEventListener('mouseover', () => {
+    localStorage.setItem("projects","branding")
     checkStatusPro()
 })
-botonIngles.addEventListener('click', () =>{
+digitalIng.addEventListener('mouseover', () => {
+    localStorage.setItem("projects","digital")
+    checkStatusPro()
+})
+comunicacionIng.addEventListener('mouseover', () => {
+    localStorage.setItem("projects","comunicacion")
     checkStatusPro()
 })

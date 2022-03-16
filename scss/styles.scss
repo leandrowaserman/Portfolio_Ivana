@@ -15,7 +15,12 @@ body {
 .spanish{
   display: block
 }
-
+.english_footer{
+  display: none
+}
+.spanish_footer{
+  display: grid
+}
 
 @import "header";
 @import "footer";
