@@ -35,3 +35,9 @@ comunicacionPro.addEventListener('mouseover', () => {
     localStorage.setItem("projects","comunicacion")
     checkStatusPro()
 })
+botonEspañol.addEventListener('click', () =>{
+    checkStatusPro()
+})
+botonIngles.addEventListener('click', () =>{
+    checkStatusPro()
+})

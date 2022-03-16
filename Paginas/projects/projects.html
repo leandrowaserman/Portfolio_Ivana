@@ -15,8 +15,8 @@
     <!-- Style -->
     <link rel="stylesheet" href="../../css/styles.css">
 </head>
-<body onload="checkStatusPro()">
-    <header class="header">
+<body onload="checkLanguage(); checkStatusPro()">
+    <header class="header spanish">
         <nav class="navbar">
                 <a href="../../index.html" class="logo nav_link"><img src="../../img/Component 1.svg" class="logo_svg" alt="logo"><h1 class="titulo_logo">IVANA GUARDAMAÑA</h1></a>
                 <button class="boton" id="boton_menu">
@@ -28,6 +28,9 @@
                         <li class="nav_item"><a href="../projects/projects.html" class="nav_link nav_linkMenu nav_linkMenu__active">PROYECTOS</a></li>
                         <li class="nav_item"><a href="../about/about.html" class="nav_link nav_linkMenu">SOBRE MI</a></li>
                         <li class="nav_item"><a href="../contact/contact.html" class="nav_link nav_linkMenu">CONTACTO</a></li>
+                        <button class="btn_idioma" id="btn_ingles">
+                            <span><img class="ingles_img" src="../../img/flag-england.png" alt="ingles"></span>
+                        </button>
                     </ul>
             </nav>
     </header>
@@ -176,7 +179,7 @@
                 </section>
             </section>
         </main>
-        <footer class="spanish">
+        <footer class="spanish_footer">
             <section class="contacto_footer">
                 <h5>Contactame</h5>
                 <div class="buttons">
@@ -233,157 +236,218 @@
                         <i class="bi bi-list"></i>
                     </button>    
                         <ul class="navbarList" id="navbar">
-                            <li class="nav_item"><a href="../../Home/index.html" class="nav_link nav_linkMenu">HOME</a></li>
-                            <li class="nav_item container--submenu"><a href="../services/services.html" class="nav_link nav_linkMenu submenu-btn">SERVICES</a></li>
-                            <li class="nav_item"><a href="../projects/projects.html" class="nav_link nav_linkMenu">PROJECTS</a></li>
-                            <li class="nav_item"><a href="../about/about.html" class="nav_link nav_linkMenu nav_linkMenu__active">ABOUT</a></li>
+                            <li class="nav_item"><a href="../../index.html" class="nav_link nav_linkMenu">HOME</a></li>
+                            <li class="nav_item"><a href="../services/services.html" class="nav_link nav_linkMenu">SERVICES</a></li>
+                            <li class="nav_item"><a href="../projects/projects.html" class="nav_link nav_linkMenu nav_linkMenu__active">PROJECTS</a></li>
+                            <li class="nav_item"><a href="../about/about.html" class="nav_link nav_linkMenu">ABOUT</a></li>
                             <li class="nav_item"><a href="../contact/contact.html" class="nav_link nav_linkMenu">CONTACT</a></li>
+                            <button class="btn_idioma" id="btn_español">
+                                <span><img class="español_img" src="../../img/flag3-spain-removebg-preview.png" alt="español"></span>
+                            </button>
                         </ul>
                 </nav>
         </header>
         <main class="english">
-            <section id="branding">
-                <article>
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <h2>Workshop Calzandos</h2>
-                        <p>
-                            The first proposal I got was to be the Community Manager of a workshop that was going to be taught by two footwear designers. They needed me to administrate their social media for a few months and to help them handle the organization of the event. 
-                        </p>
-
-                        <br>
-                        <p>Tasks done:</p>
-                        <ul>
-                            <li>Take track of the event's agenda.</li> 
-                            <li>Assure the acomplishment of the objectives.</li> 
-                            <li>Generate new proposals in torns of the event.</li> 
-                            <li>Contact the colaborators.</li> 
-                            <li>Make graphic material.</li> 
-                            <li>Post on social media.</li> 
-                        </ul>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <h2>Eliza</h2>
-                        <p>
-                            Personal entrepeneurship of design and production of bags and wallets. I took over all the productive process, from the ideation, design, assemble and construction of every product, which includes the packaging. Sales are done online via social media.
-                        </p>
-                        <br>
-
-                        <p>Tasks done:</p>
-                        <ul>
-                            <li>Logo design.</li> 
-                            <li>Packaging design.</li> 
-                            <li>Build the brand's identity.</li>  
-                            <li>Contact the colaborators.</li> 
-                            <li>Posts design.</li> 
-                            <li>Handle the brand's social media.</li> 
-                        </ul>
-                    </div>
-                </article>
+        <section class="sectionAll">
+            <nav class="sidebarServicios">
+                <ul class="sidebar_List">
+                    <li class="linkSidebar" id="branding">BRANDING</li>
+                    <li class="linkSidebar" id="digital">DIGITAL</li>
+                    <li class="linkSidebar" id="comunicacion">COMUNICATION</li>
+                </ul>
+            </nav>
+                <section class="projects_branding sectBranding" id="branding">
+                    <article class="branding_calzados">
+                        <div class="imagen_calzados">
+                            <img src="../../img/imagen 1 calzados.png" alt="imagen calzados">
+                        </div>
+                        <div class="branding_text">
+                            <h2 class="branding_title">Workshop Calzandos</h2>
+                            <p>
+                                The first proposal I got was to be the Community Manager of a workshop that was going to be taught by two footwear designers. They needed me to administrate their social media for a few months and to help them handle the organization of the event. s
+                            </p>
+                            <br>
+                            <p>Tasks done:</p>
+                            <ul class="list_Projects">
+                                <li class="item_projects">Take track of the event's agenda.</li>
+                                <li class="item_projects">Make sure that the objectives are being acomplished.</li>
+                                <li class="item_projects">Generate new proposals in torns of the event.</li>
+                                <li class="item_projects">Contact the colaborators.</li>
+                                <li class="item_projects">Generate graphic material.</li>
+                                <li class="item_projects">Post on social media.</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="branding_elza">
+                        <div>
+                            <img src="../../img/imagen eliza.png" alt="imagen eliza">
+                        </div>
+                        <div class="branding_text">
+                            <h2 class="branding_title">Eliza</h2>
+                            <p>
+                                Personal entrepeneurship of design and production of bags and wallets. I took over all the productive process, from the ideation, design, assemble and construction of every product, which includes the packaging. Sales are done online via social media.
+                            </p>
+                            <br>
+                            <p>Tasks done:</p>
+                            <ul class="list_Projects">
+                                <li class="item_projects">Logo design.</li>
+                                <li class="item_projects">Packaging design.</li>
+                                <li class="item_projects">Build the brand's identity..</li>
+                                <li class="item_projects">Contact the colaborators.</li>
+                                <li class="item_projects">Posts design.</li>
+                                <li class="item_projects">Handle the brand's social media..</li>
+                            </ul>
+                        </div>
+                    </article>
+                </section>
+                <section class="projects_digital sectDigital" id="digital">
+                    <article class="digital_mesa">
+                        <div>
+                            <img src="../../img/imagen mesa_libre.png" alt="">
+                        </div>
+                        <div class="digital_text">
+                            <h2 class="digital_title">Mesa Libre</h2>
+                            <p>Creation and UX design of the app. Mesa libre is a project that I created and developed when I was on the course of UX/UI design in Coderhouse. It is an application that helps a group of people to arrange a meeting in a meeting point (it could be either a bar or a restaurant).</p>
+                            <br>
+                            <p>Tasks donw:</p>
+                            <ul class="list_Projects">
+                                <li class="item_projects">Make an approach on the problems and solutions</li>
+                                <li class="item_projects">Research the direct and the indirect competitors.</li>
+                                <li class="item_projects">Make profiles of users and interviews.</li>
+                                <li class="item_projects">The arquitecture of the information and userflow.</li>
+                                <li class="item_projects">A functional prototype of the app.</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="digital_exessure">
+                        <div>
+                            <img src="../../img/imagen exessure.png" alt="">
+                        </div>
+                        <div class="branding_text">
+                            <h2 class="branding_title">Exessure</h2>
+                            <p>Redesign of Exessure's web page. Expressure is a company with a long trajectory on different sections such as: Engineering, Economics and Services. With a special focus on the quality of services and the products handled for the Oil & Gas and renewable energies..</p>
+                            <br>
+                            <p>Tasks done:</p>
+                            <ul class="list_Projects">
+                                <li class="item_projects">Analysis and mapping of the current product..</li>
+                                <li class="item_projects">Interviewing the clients to find hit points.</li>
+                                <li class="item_projects">Roadmaps of objectives..</li>
+                                <li class="item_projects">Make an approach for a new structure of the Web.</li>
+                                <li class="item_projects">Make a prototype of the new design and usability's tests.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </section>
+                <section class="projects_comunicacion sectComunicacion" id="comunicacion">
+                    <article class="comunicacion_qw">
+                        <div>
+                            <img class="img_com" src="../../img/imagen QW.png" alt="imagen qw">
+                        </div>
+                        <div class="branding_text">
+                            <h2 class="branding_title">QW Estudio jurídico</h2>
+                            <p>Two young proffesional partners that understand the power that social media could bring them to make theirselves know with their cases. Talking to us in an unformal and informative tone, we got really good results in some known cases that make them closer to their target audience.</p>
+                            <br>
+                            <p>Tasks done:</p>
+                            <ul class="list_Projects">
+                                <li class="item_projects">Definition of the tone and voice to use.</li>
+                                <li class="item_projects">Marketing and monthly content strategies.</li>
+                                <li class="item_projects">Planification of the content.</li>
+                                <li class="item_projects">Make lotteries.</li>
+                                <li class="item_projects">Design of posts.</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="comunicacion_vivero">
+                        <div>
+                            <img class="img_com" src="../../img/imagen vivero.png" alt="imagen vivero">
+                        </div>
+                        <div class="branding_text">
+                            <h2 class="branding_title">Vivero Claudine</h2>
+                            <p>This nursery garden counts with a biggerr audience of older clients that are not familiarized with new technologies nor social media, exceptuating Facebook or Whatsapp. Those social medias were used to grow a big community on them and to make loyal clients.</p>
+                            <br>
+                            <p>Tasks done:</p>
+                            <ul class="list_Projects">
+                                <li class="item_projects">Marketing and content strategies.</li>
+                                <li class="item_projects">Planification of monthly posts.</li>
+                                <li class="item_projects">Design of posts..</li>
+                                <li class="item_projects">Creation of videos and reels.</li>
+                                <li class="item_projects">Create advertising campaign.</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="comunicacion_candy">
+                        <div>
+                            <img class="img_com" src="../../img/iamgen candy.png" alt="imagen candy">
+                        </div>
+                        <div class="branding_text">
+                            <h2 class="branding_title">Candy Girl</h2>
+                            <p>In this handcrafted bakery shop, the way that the owner finds to communicate with their followers is very personal. The main objective was to be able to transmit her essence in each design. She is informal and has some unique words that she uses with her community.</p>
+                            <br>
+                            <p>Tasks done:</p>
+                            <ul class="list_Projects">
+                                <li class="item_projects">Marketing and content strategies.</li>
+                                <li class="item_projects">Planification and calendary of monthly posts.</li>
+                                <li class="item_projects">Deliver reports with stadistics of each month.</li>
+                                <li class="item_projects">Monitorize the brand and their competitors.</li>
+                                <li class="item_projects">Create advertising campaign.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </section>
             </section>
-            <section id="digital">
-                <article>
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <h2>Mesa Libre</h2>
-                        <p>Creation and UX design of the app. Mesa libre is a project that I created and developed when I was on the course of UX/UI design in Coderhouse. It is an application that helps a group of people to arrange a meeting in a meeting point (it could be either a bar or a restaurant).</p>
-                        <br> 
-                        <p>Tasks done:</p>
-                        <ul>
-                            <li>Make an approach on the problems and solutions.</li> 
-                            <li>Research direct and indirect competitors.</li> 
-                            <li>Make profiles of users and interviews.</li> 
-                            <li>The arquitecture of the information and userflow.</li> 
-                            <li>A functional prototype of the app.</li> 
-                        </ul>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <h2>Exessure</h2>
-                        <p>Redesign of Exessure's web page. Expressure is a company with a long trajectory on different sections such as: Engineering, Economics and Services. With a special focus on the quality of services and the products handled for the Oil & Gas and renewable energies.</p>
-                        <br> 
-                        <p>Tasks done:</p>
-                        <ul>
-                            <li>Analysis and mapping of the current product.</li> 
-                            <li>Interviewing the clients to find hit points.</li> 
-                            <li>Roadmaps of objectives.</li> 
-                            <li>Make an approach for a new structure of the Web.</li> 
-                            <li>Make a prototype of the new design and usability's tests.</li> 
-                        </ul>
-                    </div>
-                </article>
+        </main> 
+        <footer class="english_footer">
+            <section class="contacto_footer">
+                <h5>Contact me!</h5>
+                <div class="buttons">
+                    <ul class="footer_list">
+                        <li>
+                            <i class="bi bi-whatsapp"></i> 
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope"></i>
+                        </li>
+                        <li>
+                            <i class="bi bi-behance"></i>
+                        </li>
+                        <li>
+                            <i class="bi bi-linkedin"></i>
+                        </li>
+                    </ul>
+                </div> 
+                <div class="mail_footer">
+                    <p>Ivana.guardamagna@gmail.com</p>
+                </div>
+                <div class="location_footer">
+                    <p>Neuquén Capital, Argentina</p>
+                </div>
             </section>
-            <section id="comunicacion">
-                <article>
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <h2>QW Estudio jurídico</h2>
-                        <p>Two young proffesional partners that understand the power that social media could bring them to make theirselves know with their cases. Talking to us in an unformal and informative tone, we got really good results in some known cases that make them closer to their target audience. </p>
-                        <br> 
-                        <p>Tasks done:</p>
-                        <ul>
-                            <li>Definition of the tone and voice to use.</li> 
-                            <li>Marketing and monthly content strategies.</li> 
-                            <li>Planification of the content.</li> 
-                            <li>Make lotteries.</li> 
-                            <li>Design of posts.</li> 
-                        </ul>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <h2>Vivero Claudine</h2>
-                        <p>This nursery garden counts with a biggerr audience of older clients that are not familiarized with new technologies nor social media, exceptuating Facebook or Whatsapp. Those social medias were used to grow a big community on them and to make loyal clients.</p>
-                        <br> 
-                        <p>Tasks done:</p>
-                        <ul>
-                            <li>Marketing and content strategies.</li> 
-                            <li>Planification of monthly posts.</li> 
-                            <li>Design of posts.</li> 
-                            <li>Creation of videos and reels.</li> 
-                            <li>Create advertising campaign.</li> 
-                        </ul>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <h2>Candy Girl</h2>
-                        <p>In this handcrafted bakery, the way that the owner finds to communicate with their followers is very personal. The main objective was to be able to transmit her essence in each design. She is informal and has some unique words that she uses with her community.</p>
-                        <br> 
-                        <p>Tasks done:</p>
-                        <ul>
-                            <li>Marketing and content strategies.</li>
-                            <li>Planification and calendary of monthly posts.</li>
-                            <li>Deliver reports with stadistics of each month.</li> 
-                            <li>Monitorize the brand and their competitors.</li> 
-                            <li>Create advertising campaign.</li> 
-                        </ul>
-                    </div>
-                </article>
+            <section class="logo_footer">
+                <img src="../../img/Component 1.svg" class="logo_svg" alt="logo">
+                <h1 class="titulo_logo">IVANA GUARDAMAÑA</h1>
             </section>
-        </main>
+            <section class="design_footer">
+                <h5>Web Design:</h5>
+                <ul>
+                    <li>
+                        <p><a href=""><i class="bi bi-linkedin"></i></a>Germán Benavides</p>
+                    </li>
+                    <li>
+                        <p><a href=""><i class="bi bi-linkedin"></i></a>Julieta Milito</p>
+    
+                    </li>
+                    <li>
+                        <p><a href=""><i class="bi bi-linkedin"></i></a>Leandro Waserman</p>
+                    </li>
+                    <li>
+                        <p><a href=""><i class="bi bi-linkedin"></i></a>Brenda Zaya</p>
+                    </li>
+                </ul>
+            </section>
+        </footer>
         <!-- Js Funciones -->
+    
+
     <script src="../../Javascript/main.js"></script>
     <script src="../../Javascript/projects.js"></script>
     </body>
