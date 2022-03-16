@@ -1,6 +1,3 @@
-const botonMenu = document.querySelector('.boton')
-const menu = document.querySelector('.navbarList')
-
 const digitalIndexSer = document.getElementById("img1")
 const brandingIndexSer = document.getElementById("img2")
 const comunicacionIndexSer = document.getElementById("img3")
@@ -28,6 +25,3 @@ comunicacionIndexSer.addEventListener('click', () => {
     localStorage.setItem("services","comunicacion")
 })
 
-botonMenu.addEventListener('click', () => {
-    menu.classList.toggle('menu_visible')
-})

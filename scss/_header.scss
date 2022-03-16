@@ -55,69 +55,70 @@
             margin-right: 160px;
         }
 
-        .nav_item{
-            margin: 0 20px;
-            text-transform: uppercase;
-            width: max-content;
-            line-height: 80px;
-        }
-
-        .nav_link{
-            text-decoration: none;
-            color: black;
-            font-size: 15px;
-            font-weight: 600;
-        }
-
-        .nav_linkMenu{
-            transition: 0.2s;
-            padding-bottom: 5px;
-            &:hover{
-                background: none;
-                border-bottom:4px solid crimson;
-                
+            .nav_item{
+                margin: 0 20px;
+                text-transform: uppercase;
+                width: max-content;
+                line-height: 80px;
             }
-        }
-        
-        .nav_linkMenu__active{
-            background: none;
-            border-bottom: 4px solid crimson;
-        }
-        .btn_idioma{
-            background: #DCD0C2;
-            border-radius: 50px;
-            border: none;
-            position: relative;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            outline: none;
-            height: 30px;
-            width: 70px;
-            margin-top: 25px;
-            
-            span{
-                line-height: 30px;
-                display: block;
-                background: none;
-                font-size: 14px;
-                font-family: 'Montserrat', sans-serif;
+    
+            .nav_link{
+                text-decoration: none;
+                color: black;
+                font-size: 15px;
                 font-weight: 600;
-                .español_img{
-                    width: 53px;
-                    height: 30px;
-                    transition: 0.3s;
-                    &:hover{
-                        transform: scale(1.2);
-                    }
+            }
+    
+            .nav_linkMenu{
+                transition: 0.2s;
+                padding-bottom: 5px;
+                &:hover{
+                    background: none;
+                    border-bottom:4px solid crimson;
                 }
-
-                .ingles_img{
-                    width: 30px;
-                    height: 30px;
-                    transition: 0.3s;
-                    &:hover{
-                        transform: scale(1.2);
+            }
+            
+            .nav_linkMenu__active{
+                background: none;
+                border-bottom: 4px solid crimson;
+            }
+    
+            .btn_idioma{
+                background: #DCD0C2;
+                border-radius: 50px;
+                border: none;
+                position: relative;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                outline: none;
+                height: 30px;
+                width: 70px;
+                margin-top: 25px;
+                
+                span{
+                    line-height: 30px;
+                    display: block;
+                    background: none;
+                    font-size: 14px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 600;
+                    .español_img{
+                        width: 53px;
+                        height: 30px;
+                        transition: 0.3s;
+                        &:hover{
+                            transform: scale(1.2);
+                        }
+                    }
+    
+                    .ingles_img{
+                        width: 30px;
+                        height: 30px;
+                        transition: 0.3s;
+                        &:hover{
+                            transform: scale(1.2);
+                        }
                     }
                 }
             }
@@ -127,52 +128,54 @@
                     height: 70px;
                 }
 
-                .logo_svg{ 
-                    line-height: 70px;   
-                }
+                    .logo_svg{ 
+                        line-height: 70px;   
+                    }
 
-                .logo{
-                    
-                    line-height: 70px;
-                }
+                    .logo{
+                        
+                        line-height: 70px;
+                    }
 
-                .navbarList{
-                    flex-direction: column;
-                    align-items: center;
-                    border-radius: 5px;
-                    margin-right: 50%;
-                    margin-left: 40%;
-                    width: 200px;
-                    position: fixed;
-                    left: 0;
-                    top: 70px;
-                    padding: 0;
-                    background: #DCD0C2;  
-                    height: calc(90% - 70px);
-                    overflow-y: auto;
-                    left: -100%;
-                    transition: all 1s;
-                }
+                    .navbarList{
+                        flex-direction: column;
+                        align-items: center;
+                        border-radius: 5px;
+                        margin-right: 50%;
+                        margin-left: 40%;
+                        width: 200px;
+                        position: fixed;
+                        left: 0;
+                        top: 70px;
+                        padding: 0;
+                        background: #DCD0C2;  
+                        height: calc(90% - 70px);
+                        overflow-y: auto;
+                        left: -100%;
+                        transition: all 1s;
+                    }
 
-                .nav_item{
-                    line-height: 70px;
-                }
+                   
 
-                .nav_linkMenu:hover,
-                .nav_linkMenu__active{
-                    background: none;
-                    color: crimson;
-                }
+                    .nav_item{
+                        line-height: 70px;
+                    }
 
+                    .nav_linkMenu:hover,
+                    .nav_linkMenu__active{
+                        background: none;
+                        color: crimson;
+                    }
 
-                .boton{
-                    display: block;
-                    height: 70px;
-                }
+                    .boton{
+                        display: block;
+                        height: 70px;
+                    }
 
-                .menu_visible{
-                    left: 0;
-                }
+                    .menu_visible{
+                        left: 0;
+                    }
+                 
             }
             
             @media (max-width: 990px) {
@@ -204,7 +207,7 @@
                 }
 
             }
-}
+
 
        
         
