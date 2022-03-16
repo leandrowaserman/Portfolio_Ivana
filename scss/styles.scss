@@ -1,0 +1,27 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+.english{
+  display: none
+}
+.spanish{
+  display: block
+}
+
+
+@import "header";
+@import "footer";
+@import "home";
+@import "contact";
+@import "about";
+@import "services";
+@import "projects"
+

@@ -1,0 +1,304 @@
+.sectionAll{
+    display: flex;
+}
+
+.sidebarServicios{
+    width: 289px;
+    height: 911px;
+    background: #E8B4B7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+    .sidebar_List{
+        list-style: none;
+    }
+    
+    .linkSidebar{
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: #FFFFFF;
+        margin: 80px 0;
+        padding-left: 40px;
+        cursor: pointer;
+            height: 67px;
+            width: 289px;
+            line-height: 67px;
+        &:hover{
+            background: #FFFFFF;
+
+            color: #EC5A61;
+            font-weight: bold;
+            
+        }
+    }
+
+    .sectBranding{
+        display: block;
+    }
+
+    .sectDigital{
+        display: none;
+    }
+
+    .sectComunicacion{
+        display: none;
+    }
+
+
+    .sectionServicios{
+        height: 911px;
+        width: 80%;
+
+        .title_Servicios{
+            padding: 10px;
+            margin: 120px 20px 50px 20px;
+        }
+        
+        .title_Servicios__titulo{
+            font-family: 'DM Serif Display', serif;
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .title_Servicios__texto{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        
+        .tareas_servicios{
+            font-weight: 600;
+            font-size: 18px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .list_tareas_Servicios{
+            padding: 0 10px;
+            margin-left: 40px;
+            margin-right: 20px;
+            width: 40vw;
+        }
+        
+        .ul_servicios{
+            font-size: 16px;
+            margin-left: 15px;
+        }
+        
+        .item_servicios{
+            margin: 50px 0;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        
+        .botonservicios{
+            background: #EC5A61;
+                    border-radius: 50px;
+                    width: 209px;
+                    height: 45px;
+                    border: none;
+                    margin-left: 10%;
+                    margin-right: 50%;
+                    margin-top: 20px;
+                    color: #FFFFFF; 
+        }
+        
+        .serviciosBox{
+            position: relative;
+        }
+        
+        .imagenBox{
+            position: absolute;
+        }
+        
+        .imagen_Servicios{
+            width: 512px;
+            height: 512px;
+            margin-left: 50px;
+            
+        }
+        
+        .back_red{
+            width: 630px;
+            height: 308px;
+            background: #EC5A61;
+            margin-top: 250px;
+        }
+    }
+
+    .sectionList_Servicios{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    .sectionServicios2{
+        height: 911px;
+        width: 80%;
+
+        .title_Servicios{
+            padding: 10px;
+            margin: 120px 20px 50px 20px;
+        }
+        
+        .title_Servicios__titulo{
+            font-family: 'DM Serif Display', serif;
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .title_Servicios__texto{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+
+        
+        
+        .tareas_servicios{
+            font-weight: 600;
+            font-size: 18px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .list_tareas_Servicios{
+            padding: 0 10px;
+            margin-left: 40px;
+            margin-right: 20px;
+            width: 40vw;
+        }
+        
+        .ul_servicios{
+            font-size: 16px;
+            margin-left: 15px;
+        }
+        
+        .item_servicios{
+            margin: 40px 0;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        
+        .botonservicios{
+            background: #EC5A61;
+                    border-radius: 50px;
+                    width: 209px;
+                    height: 45px;
+                    border: none;
+                    margin-left: 10%;
+                    margin-right: 50%;
+                    margin-top: 20px;
+                    color: #FFFFFF; 
+        }
+        
+        .serviciosBox{
+            position: relative;
+        }
+        
+        .imagenBox{
+            position: absolute;
+        }
+        
+        .imagen_Servicios{
+            width: 512px;
+            height: 512px;
+            margin-left: 50px;
+            
+        }
+        
+        .back_red{
+            width: 630px;
+            height: 308px;
+            background: #EC5A61;
+            margin-top: 250px;
+        }
+    }
+
+    .sectionServicios3{
+        height: 911px;
+        width: 80%;
+
+        .title_Servicios{
+            padding: 10px;
+            margin: 120px 20px 50px 20px;
+        }
+        
+        .title_Servicios__titulo{
+            font-family: 'DM Serif Display', serif;
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .title_Servicios__texto{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        .tareas_servicios{
+            font-weight: 600;
+            font-size: 18px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .list_tareas_Servicios{
+            padding: 0 10px;
+            margin-left: 40px;
+            margin-right: 20px;
+            width: 40vw;
+        }
+        
+        .ul_servicios{
+            font-size: 16px;
+            margin-left: 15px;
+        }
+        
+        .item_servicios{
+            margin: 40px 0;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        
+        .botonservicios{
+            background: #EC5A61;
+                    border-radius: 50px;
+                    width: 209px;
+                    height: 45px;
+                    border: none;
+                    margin-left: 10%;
+                    margin-right: 50%;
+                    margin-top: 20px;
+                    color: #FFFFFF; 
+        }
+        
+        .serviciosBox3{
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .imagenBox{
+            position: absolute;
+        }
+        
+        .imagen_Servicios{
+            width: 512px;
+            height: 512px;
+            margin-left: 50px;
+            
+        }
+        
+        .back_red{
+            width: 630px;
+            height: 308px;
+            background: #EC5A61;
+            margin-top: 250px;
+        }
+    }

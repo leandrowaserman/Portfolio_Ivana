@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivana Guardamaña</title>
+    <meta>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Julius+Sans+One&family=Montserrat:wght@300&family=Open+Sans:wght@600&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body onload="checkStatus()">
+    <header class="header spanish">
+        <nav class="navbar">
+                <a href="../../index.html" class="logo nav_link"><img src="../../img/Component 1.svg" class="logo_svg" alt="logo"><h1 class="titulo_logo">IVANA GUARDAMAÑA</h1></a>
+                <button class="boton" id="btnMenu">
+                    <i class="bi bi-list"></i>
+                </button>    
+                    <ul class="navbarList" id="navbar">
+                        <li class="nav_item"><a href="../../index.html" class="nav_link nav_linkMenu">INICIO</a></li>
+                        <li class="nav_item"><a href="../services/services.html" class="nav_link nav_linkMenu nav_linkMenu__active">SERVICIOS</a></li>
+                        <li class="nav_item"><a href="../projects/projects.html" class="nav_link nav_linkMenu">PROYECTOS</a></li>
+                        <li class="nav_item"><a href="../about/about.html" class="nav_link nav_linkMenu">SOBRE MI</a></li>
+                        <li class="nav_item"><a href="../contact/contact.html" class="nav_link nav_linkMenu">CONTACTO</a></li>
+                    </ul>
+            </nav>
+    </header>
+    <main class="spanish">
+        <section class="sectionAll">
+            <nav class="sidebarServicios">
+                <ul class="sidebar_List">
+                    <li class="linkSidebar" id="branding">BRANDING</li>
+                    <li class="linkSidebar" id="digital">DIGITAL</li>
+                    <li class="linkSidebar" id="comunicacion">COMUNICACION</li>
+                </ul>
+            </nav>
+            <section class="sectionServicios sectBranding" id="spanish">
+                    <div class="title_Servicios">
+                        <h2 class="title_Servicios__titulo">Identidad, estrategias y campañas</h2>
+                        <p class="title_Servicios__texto">Para lograr un proyecto sólido e integral necesitamos definir y crear el diseño de la identidad de la marca con todos los elementos gráficos y digitales que necesite.</p>
+                    </div>
+                    <div class="sectionList_Servicios">
+                        <div class="list_tareas_Servicios">
+                            <p class="tareas_servicios">Tareas que realizo:</p>
+                            <ul class="ul_servicios">
+                                <li class="item_servicios">Creación de marca.</li>
+                                <li class="item_servicios">Identificar públicos objetivos.</li>
+                                <li class="item_servicios">Propósito y valores de la marca.</li>
+                                <li class="item_servicios">Manual de estilo y comunicación.</li>
+                                <li class="item_servicios">En caso de no contar con logo: Logotipo, isotipo, imagotipo, isologo.</li>
+                                <li class="item_servicios">Rediseño de logo e identidad corporativa.</li>
+                            </ul>
+                            <button class="botonservicios">VER PROYECTOS</button>
+                        </div>
+                        <div class="serviciosBox">
+                            <div class="imagenBox">
+                                <img class="imagen_Servicios" src="../../img/img-services.png" alt="imagen servicios">
+                            </div>
+                            <div class="back_red"></div>
+                        </div>
+                    </div>
+            </section>
+            <section class="sectionServicios2 sectDigital" id="spanish">
+                <div class="title_Servicios">
+                    <h2 class="title_Servicios__titulo">Diseño UX/UI, diseño Web y App</h2>
+                    <p class="title_Servicios__texto">Trabajo en el diseño de productos digitales enfocados en la experiencia de usuario. A través de las investigaciones y pruebas de usabilidad garantizo que tu sitio web o app pueda ser utilizado satisfactoriamente por sus usuarios.</p>
+                </div>
+                <div class="sectionList_Servicios">
+                    <div class="list_tareas_Servicios">
+                        <p class="tareas_servicios">Tareas que realizo:</p>
+                        <ul class="ul_servicios">
+                            <li class="item_servicios">Análisis del producto actual y su competencia.</li>
+                            <li class="item_servicios">Resolución de problemas centrados en el usuario.</li>
+                            <li class="item_servicios">Entrevistas, observaciones y estudios de campo.</li>
+                            <li class="item_servicios">Creación de personas.</li>
+                            <li class="item_servicios">Pruebas de usabilidad, experiencia de usuario y recomendaciones.</li>
+                            <li class="item_servicios">Creación de sistemas de diseño y manual de estilo.</li>
+                        </ul>
+                        <button class="botonservicios">VER PROYECTOS</button>
+                    </div>
+                    <div class="serviciosBox">
+                        <div class="imagenBox">
+                            <img class="imagen_Servicios" src="../../img/img-serv_digital.png" alt="">
+                        </div>
+                        <div class="back_red"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="sectionServicios3 sectComunicacion"  id="spanish">
+                <div class="title_Servicios">
+                    <h2 class="title_Servicios__titulo">Social media, contenidos y estrategia</h2>
+                    <p class="title_Servicios__texto">Para poder lograr un mayor alcance de tus redes sociales, es necesario no solo gestionarlas, sino tambíen generar, planificar y diseñar el contenido.</p>
+                </div>
+                <div class="sectionList_Servicios">
+                    <div class="list_tareas_Servicios">
+                        <p class="tareas_servicios">Tareas que realizo:</p>
+                        <ul class="ul_servicios">
+                            <li class="item_servicios">Estrategia de Marketing y contenido.</li>     
+                            <li class="item_servicios">Planificación y calendario de contenido.</li>
+                            <li class="item_servicios">Análisis y estadísticas.</li>
+                            <li class="item_servicios">Monitorizar marca y competencias.</li>
+                            <li class="item_servicios">Tendencias.</li>
+                            <li class="item_servicios">Pautas publicitarias.</li>
+                            <li class="item_servicios">Diseño de contenido digital.</li>
+                        </ul>
+                        <button class="botonservicios">VER PROYECTOS</button>
+                    </div>
+                    <div class="serviciosBox3">
+                        <div class="imagenBox">
+                            <img class="imagen_Servicios" src="../../img/img-serv_com.png" alt="">
+                        </div>
+                        <div class="back_red"></div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer class="titulos spanish">
+        <section class="contacto_footer">
+            <h5>¡Contactame!</h5>
+            <div class="buttons">
+             <ul class="footer_list">
+                    <li>
+                        <i class="bi bi-whatsapp"></i> 
+                    </li>
+                    <li>
+                        <i class="bi bi-envelope"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-behance"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-linkedin"></i>
+                    </li>
+                </ul>
+            </div> 
+            <div class="mail_footer">
+                <p>Ivana.guardamagna@gmail.com</p>
+            </div>
+            <div class="location_footer">
+                <p>Neuquén Capital, Argentina</p>
+            </div>
+        </section>
+        <section class="logo_footer">
+            <img src="../../img/Component 1.svg" class="logo_svg" alt="logo">
+            <h1 class="titulo_logo">IVANA GUARDAMAÑA</h1>
+        </section>
+        <section class="design_footer">
+            <h5>Diseño Web:</h5>
+            <ul>
+                <li>
+                    <p><a href=""><i class="bi bi-linkedin"></i></a>Germán Benavides</p>
+                </li>
+                <li>
+                    <p><a href=""><i class="bi bi-linkedin"></i></a>Julieta Milito</p>
+
+                </li>
+                <li>
+                    <p><a href=""><i class="bi bi-linkedin"></i></a>Leandro Waserman</p>
+                </li>
+                <li>
+                    <p><a href=""><i class="bi bi-linkedin"></i></a>Brenda Zaya</p>
+                </li>
+            </ul>
+        </section>
+    </footer> 
+    <!-- INGLES -->
+    <header class="header english">
+        <nav class="navbar">
+                <a href="../../Home/index.html" class="logo nav_link"><img src="../../img/Component 1.svg" class="logo_svg" alt="logo"><h1 class="titulo_logo">IVANA GUARDAMAÑA</h1></a>
+                <button class="boton" id="boton_menu">
+                    <i class="bi bi-list"></i>
+                </button>    
+                    <ul class="navbarList" id="navbar">
+                        <li class="nav_item"><a href="../../Home/index.html" class="nav_link nav_linkMenu">HOME</a></li>
+                        <li class="nav_item container--submenu"><a href="../services/services.html" class="nav_link nav_linkMenu submenu-btn">SERVICES</a></li>
+                        <li class="nav_item"><a href="../projects/projects.html" class="nav_link nav_linkMenu">PROJECTS</a></li>
+                        <li class="nav_item"><a href="../about/about.html" class="nav_link nav_linkMenu nav_linkMenu__active">ABOUT</a></li>
+                        <li class="nav_item"><a href="../contact/contact.html" class="nav_link nav_linkMenu">CONTACT</a></li>
+                    </ul>
+            </nav>
+    </header>
+    <main class="english">
+        <section id="services_branding english">
+            <div>
+                <h2>Identity, strategies and campaigns.</h2>
+                <p>In order to achieve a solid and integral project, we need to define and create the design of the brand s identity with al the graphic and digital elements that it would need.</p>
+            </div>
+            <div>
+                <p>My tasks:</p>
+                <ul>
+                    <li>Creation of the brand.</li>
+                    <li>Find the target audience.</li>
+                    <li>Purposes and values of the brand.</li>
+                    <li>Style and comunication manual.</li>
+                    <li>In case of not having a logo: Logotype, isotype, imagotype, isologist.</li>
+                    <li>Corporate identity and logo redesign.</li>
+                </ul>
+                <button>View projects</button>
+            </div>
+            <div>
+                <img src="" alt="">
+            </div>
+            <div class="back_red"></div>
+        </section>
+        <section id="services_digital english">
+            <div>
+                <h2>UX/UI, Web and App design</h2>
+                <p>I work on the design of digital products based on the user experience. With researches and usability tests I will guarantee that your web page or app could be succesfully used by the users.</p> 
+            </div>
+            <div>
+                <p>My tasks:</p>
+                <ul>
+                    <li>Current product and competitors analysis.</li> 
+                    <li>Problem solving focus on the user.</li> 
+                    <li>Interviews, observations and field studies.</li> 
+                    <li>User creations.</li> 
+                    <li>Tests of usability, user experience and recomendations.</li> 
+                    <li>Creation of design sistems and style manual.</li> 
+                </ul>
+                <button>View projects</button>
+            </div>
+            <div>
+                <img src="" alt="">
+            </div>
+            <div class="back_red"></div>
+        </section>
+        <section id="services_comunicaion english">
+            <div>
+                <h2>Social media, contents and strategies. </h2> 
+                <p>In order to gain a bigger range of users on your social media it is not only necessary to manage them. It is also needed to generate, plan and design the content posted.</p>
+            </div> 
+            <div>
+                <p>My tasks:</p>
+                <ul>
+                    <li>Marketing and content strategy.</li>  
+                    <li>Planification and calendar of the content.</li> 
+                    <li>Analysis and stadistics.</li> 
+                    <li>Monitorize the brand and their competitors.</li> 
+                    <li>Tendencies.</li> 
+                    <li>Advertising campaigns.</li> 
+                    <li>Design digital content.</li>
+                </ul>
+                <button>View projects</button>
+            </div>
+            <div>
+                <img src="" alt="">
+            </div>
+            <div class="back_red"></div>
+        </section>
+    </main>
+    <footer class="titulos english">
+        <section class="contacto_footer">
+            <h5>Contact me</h5>
+            <div class="buttons">
+             <ul class="footer_list">
+                    <li>
+                        <i class="bi bi-whatsapp"></i> 
+                    </li>
+                    <li>
+                        <i class="bi bi-envelope"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-behance"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-linkedin"></i>
+                    </li>
+                </ul>
+            </div> 
+            <div class="mail_footer">
+                <p>Ivana.guardamagna@gmail.com</p>
+            </div>
+            <div class="location_footer">
+                <p>Neuquén Capital, Argentina</p>
+            </div>
+        </section>
+        <section class="logo_footer">
+            <img src="../../img/Component 1.svg" class="logo_svg" alt="logo">
+            <h1 class="titulo_logo">IVANA GUARDAMAÑA</h1>
+        </section>
+        <section class="design_footer">
+            <h5>Web Design:</h5>
+            <ul>
+                <li>
+                    <p><a href=""><i class="bi bi-linkedin"></i></a>Germán Benavides</p>
+                </li>
+                <li>
+                    <p><a href=""><i class="bi bi-linkedin"></i></a>Julieta Milito</p>
+
+                </li>
+                <li>
+                    <p><a href=""><i class="bi bi-linkedin"></i></a>Leandro Waserman</p>
+                </li>
+                <li>
+                    <p><a href=""><i class="bi bi-linkedin"></i></a>Brenda Zaya</p>
+                </li>
+            </ul>
+        </section>
+    </footer>
+    <!-- Js Funciones -->
+    <script src="../../Javascript/main.js"></script>
+    <script src="../../Javascript/servicios.js"></script>
+</body>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivana Guardamaña</title>
+    <meta>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Julius+Sans+One&family=Montserrat:wght@300&family=Open+Sans:wght@600&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body onload="checkLanguage()">
+    <!-- ESPAÑOL -->
+    <header class="header spanish">
+        <nav class="navbar">
+                <a href="./index.html" class="logo nav_link"><img src="./img/Component 1.svg" class="logo_svg" alt="logo">
+                    <h1 class="titulo_logo">IVANA GUARDAMAÑA</h1>
+                </a>
+                <button class="boton" id="boton_menu">
+                    <i class="bi bi-list"></i>
+                </button>    
+                    <ul class="navbarList" id="navbar">
+                        <li class="nav_item"><a href="./index.html" class="nav_link nav_linkMenu nav_linkMenu__active">INICIO</a></li>
+                        <li class="nav_item"><a href="./Paginas/services/services.html" class="nav_link nav_linkMenu">SERVICIOS</a></li>
+                        <li class="nav_item"><a href="./Paginas/projects/projects.html" class="nav_link nav_linkMenu">PROYECTOS</a></li>
+                        <li class="nav_item"><a href="./Paginas/about/about.html" class="nav_link nav_linkMenu">SOBRE MI</a></li>
+                        <li class="nav_item"><a href="./Paginas/contact/contact.html" class="nav_link nav_linkMenu">CONTACTO</a></li>
+                        <button class="btn_idioma" id="btn_ingles">
+
+                            <span><img class="ingles_img" src="./img/flag-england.png" alt="ingles"></span>
+                        </button>
+                    </ul>
+        </nav>
+    </header>
+    <main class="main_top spanish">
+        <section class="section1">
+            <div class="sectionHola">
+                <h2 class="hola">¡HOLA!</h2>
+                <h4 class="hola2">Mi nombre es Ivana</h4>
+                <P>Soy diseñadora industrial y UX/UI. Mi perfil laboral lo fui desarrollando 
+                desde el área de marketing y diseño digital. Donde encontré la manera
+                de fusionar todo lo que más me apasiona hacer. <br>
+                Mi distinción es mi enfoque en el campo de la investigación, análisis y el 
+                desarrollo de estrategias creativas, poniendo como principal protagonista
+                al usuario. Para así, poder brindarle, la mejor experiencia
+                </P>
+                <a href="./Paginas/about/about.html"><button class="btnSection1">LEE MAS SOBRE MI</button></a>
+            </div>
+            <div >
+                <img class="imgHome" src="./img/imgivanahome.png" alt="imagen home">
+            </div>
+        </section>
+        <section class="sectionAyudarte">
+            <h3>¿En que puedo ayudarte?</h3>
+                <div class="section2">
+                    <div class="brandingHome">
+                        <h4>BRANDING</h4>
+                        <img src="./img/imgbranding.svg" alt="imagen branding">
+                        <h6>Identidad de marca</h6>
+                        <p>Comencemos definiendo y creando el diseño para darle identidad a tu marca con todos sus elementos gráficos y digitales
+                        que necesites.
+                        </p>
+                    </div>
+                    <div class="brandingHome">
+                        <h4> DIGITAL</h4>
+                        <img src="./img/imgdigital.svg" alt="imagen digital">
+                        <h6>Diseño web y plataformas UX/UI</h6>
+                        <p>Para que tu sitio web o app tenga usabilidad necesitas un diseñador UX.
+                        Desde mis conocimientos realizo las investigaciones y pruebas necesarias para mejorar la experiencia del usuario.
+                        </p>
+                    </div>
+                    <div class="brandingHome">
+                        <h4>COMUNICACION</h4>
+                        <img src="./img/imgcomunicaicon.svg" alt="imagen comunicacion">
+                        <h6>Contenidos y estrategia</h6>
+                        <p>¡Hagamos crecer tus redes! Como community manager me encargo de gestionar tus redes sociales, generar y planificar el
+                        contenido necesario para lograr tener un mayor alcance.
+                        </p>
+                    </div>
+                </div>  
+        </section>
+        <section class="sectionProyectos">
+           <h3>Mis proyectos</h3>
+           <div class="proyectos proyectos1">
+                <a href="./Paginas/services/services.html" class="proy1_6 img1 digital1" id="img1">
+                    <p>DIGITAL</p>
+                </a>
+                <a href="./Paginas/services/services.html" class="proy2_5 img2 branding1" id="img2">
+                    <p>BRANDING</p>
+                </a>
+            
+                <a href="./Paginas/services/services.html" class="proy2_5 img3 comunicacion1" id="img3">
+                    <p>COMUNICACIÓN</p>
+                </a>
+            </div> 
+            <div class="proyectos proyectos2">
+                <a href="./Paginas/projects/projects.html" class="proy2_5 img4 digital2" id="img4">
+                    <p>DIGITAL</p>
+                </a>
+                <a href="./Paginas/projects/projects.html" class="proy2_5 img5 comunicacion2" id="img5">
+                    <p>COMUNICACIÓN</p>
+                </a>
+                <a href="./Paginas/projects/projects.html" class="proy1_6 img6 branding2" id="img6">
+                    <p>BRANDING</p>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="spanish_footer">
+        <section class="contacto_footer">
+            <h5>¡Contactame!</h5>
+            <div class="buttons">
+                <ul class="footer_list">
+                    <li>
+                        <i class="bi bi-whatsapp"></i> 
+                    </li>
+                    <li>
+                        <i class="bi bi-envelope"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-behance"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-linkedin"></i>
+                    </li>
+                </ul>
+            </div> 
+            <div class="mail_footer">
+                <p>Ivana.guardamagna@gmail.com</p>
+            </div>
+            <div class="location_footer">
+                <p>Neuquén Capital, Argentina</p>
+            </div>
+        </section>
+        <section class="logo_footer">
+            <img src="./img/Component 1.svg" class="logo_svg" alt="logo">
+            <h1 class="titulo_logo">IVANA GUARDAMAÑA</h1>
+        </section>
+        <section class="design_footer">
+            <h5>Diseño Web:</h5>
+            <ul>
+                <li>
+                    <p><a href=""><i class="bi bi-linkedin"></i></a>Germán Benavides</p>
+                </li>
+                <li>
+                    <p><a href=""><i class="bi bi-linkedin"></i></a>Julieta Milito</p>
+
+                </li>
+                <li>
+                    <p><a href=""><i class="bi bi-linkedin"></i></a>Leandro Waserman</p>
+                </li>
+                <li>
+                    <p><a href=""><i class="bi bi-linkedin"></i></a>Brenda Zaya</p>
+                </li>
+            </ul>
+        </section>
+    </footer>
+    <!-- INGLES -->
+    <header class="header english">
+        <nav class="navbar">
+                <a href="./index.html" class="logo nav_link"><img src="./img/Component 1.svg" class="logo_svg" alt="logo"><h1 class="titulo_logo">IVANA GUARDAMAÑA</h1></a>
+                <button class="boton" id="boton_menu">
+                    <i class="bi bi-list"></i>
+                </button>    
+                    <ul class="navbarList" id="navbar">
+                        <li class="nav_item"><a href="./index.html" class="nav_link nav_linkMenu nav_linkMenu__active">HOME</a></li>
+                        <li class="nav_item"><a href="./Paginas/services/services.html" class="nav_link nav_linkMenu">SERVICES</a></li>
+                        <li class="nav_item"><a href="./Paginas/projects/projects.html" class="nav_link nav_linkMenu">PROJECTS</a></li>
+                        <li class="nav_item"><a href="./Paginas/about/about.html" class="nav_link nav_linkMenu">ABOUT</a></li>
+                        <li class="nav_item"><a href="./Paginas/contact/contact.html" class="nav_link nav_linkMenu">CONTACT</a></li>
+                        <button class="btn_idioma" id="btn_español">
+                            <span><img class="español_img" src="./img/flag3-spain-removebg-preview.png" alt="español"></span>
+                        </button>
+                    </ul>
+            </nav>
+    </header>
+    <main class="main_top english">
+        <section class="section1">
+            <div class="sectionHola">
+                <h2 class="hola">HI!</h2>
+                <h4 class="hola2">My name is Ivana</h4>
+                <P>    I am an industrial and UX/UI designer. I developed myself professionally in the area of marketing and digital design, where i found the way to fuse everything that I am passionate about.
+                    <br>
+                I am distinguished by my focus on research, analysis and the development of creative strategies that makes the user the protagonist, in order to bring him the best experience possible.
+                </P>
+                <a href="./Paginas/about/about.html"><button class="btnSection1">LEARN MORE ABOUT ME</button></a>
+            </div>
+            <div >
+                <img class="imgHome" src="./img/imgivanahome.png" alt="imagen home">
+            </div>
+        </section>
+
+        <section class="sectionAyudarte">
+            <h3>¿En que puedo ayudarte?</h3>
+                <div class="section2">
+                    <div class="brandingHome">
+                        <h4>BRANDING</h4>
+                        <img src="./img/imgbranding.svg" alt="imagen branding">
+                        <h6>Brand Identity</h6>
+                        <p>Let's start by defining and creating the design that will give your brand the identity with all the graphic and digital elements that are necessary.
+                        </p>
+                    </div>
+                    <div class="brandingHome">
+                        <h4> DIGITAL</h4>
+                        <img src="./img/imgdigital.svg" alt="imagen digital">
+                        <h6>Web design and UX/UI platforms</h6>
+                        <p>If you want your web page or app to have a good usability, you will need an UX designer.
+                        With my knowledge, I will take over the researches and tests necessaries to bring a better experience to the user. 
+                        </p>
+                    </div>
+                    <div class="brandingHome">
+                        <h4>COMUNICATION</h4>
+                        <img src="./img/imgcomunicaicon.svg" alt="imagen comunicacion">
+                        <h6>Contenidos y estrategia</h6>
+                        <p>Let's grow your social media! As a community manager, my duty is to handle your social media by generating and planning the needed content so you can reach a bigger range of audience.
+                        </p>
+                    </div>
+                </div>  
+        </section>
+
+        <section class="sectionProyectos">
+            <h3>My projects</h3>
+            <div class="proyectos">
+                 <a href="" class="proy1_6 digital img1" >
+                     <p>DIGITAL</p>
+                 </a>
+                 <a href="" class="proy2_5 img2">
+                     <p>BRANDING</p>
+                 </a>
+             
+                 <a href="" class="proy2_5 img3">
+                     <p>COMUNICATION</p>
+                 </a>
+             </div> 
+             <div class="proyectos">
+                 <a href="" class="proy2_5 img4">
+                     <p>DIGITAL</p>
+                 </a>
+                 <a href="" class="proy2_5 img5 comunicacion">
+                     <p>COMUNICATION</p>
+                 </a>
+                 <a href="" class="proy1_6 img6">
+                     <p>BRANDING</p>
+                 </a>
+             </div>
+         </section>
+    </main>
+    <footer class="english_footer">
+        <section class="contacto_footer">
+            <h5>Contact me</h5>
+            <div class="buttons">
+             <ul class="footer_list">
+                    <li>
+                        <i class="bi bi-whatsapp"></i> 
+                    </li>
+                    <li>
+                        <i class="bi bi-envelope"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-behance"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-linkedin"></i>
+                    </li>
+                </ul>
+            </div> 
+            <div class="mail_footer">
+                <p>Ivana.guardamagna@gmail.com</p>
+            </div>
+            <div class="location_footer">
+                <p>Neuquén Capital, Argentina</p>
+            </div>
+        </section>
+        <section class="logo_footer">
+            <img src="./img/Component 1.svg" class="logo_svg" alt="logo">
+            <h1 class="titulo_logo">IVANA GUARDAMAÑA</h1>
+        </section>
+        <section class="design_footer">
+            <h5>Web Design:</h5>
+            <ul>
+                <li>
+                    <p><a href=""><i class="bi bi-linkedin"></i></a>Germán Benavides</p>
+                </li>
+                <li>
+                    <p><a href=""><i class="bi bi-linkedin"></i></a>Julieta Milito</p>
+
+                </li>
+                <li>
+                    <p><a href=""><i class="bi bi-linkedin"></i></a>Leandro Waserman</p>
+                </li>
+                <li>
+                    <p><a href=""><i class="bi bi-linkedin"></i></a>Brenda Zaya</p>
+                </li>
+            </ul>
+        </section>
+    </footer>
+    <!-- Js Funciones -->
+    <script src="./Javascript/home.js"></script>
+    <script src="./Javascript/main.js"></script>
+</body>
+</html>
