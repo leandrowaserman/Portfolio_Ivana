@@ -1,3 +1,5 @@
+let botonIngles = document.getElementById("btn_ingles")
+let botonEspañol = document.getElementById("btn_español")
 function checkLanguage(){
     const ingles = document.getElementsByClassName("english")
     const español = document.getElementsByClassName("spanish")
@@ -26,8 +28,7 @@ function checkLanguage(){
     }
 }
 window.onload = checkLanguage()
-let botonIngles = document.getElementById("btn_ingles")
-let botonEspañol = document.getElementById("btn_español")
+
 botonEspañol.addEventListener('click', () =>{
     localStorage.setItem("language", 1)
     checkLanguage()
