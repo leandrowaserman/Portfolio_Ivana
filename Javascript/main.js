@@ -25,13 +25,33 @@ function checkLanguage(){
 
     }
 }
+window.onload = checkLanguage()
 let botonIngles = document.getElementById("btn_ingles")
 let botonEspañol = document.getElementById("btn_español")
 botonEspañol.addEventListener('click', () =>{
     localStorage.setItem("language", 1)
     checkLanguage()
+
 })
 botonIngles.addEventListener('click', () =>{
     localStorage.setItem("language", 2)
     checkLanguage()
+
 })
+
+
+
+const botonMenu = document.getElementsByClassName("boton")
+const menu = document.getElementsByClassName('navbarList')
+
+for (boton of botonMenu){
+    boton.addEventListener('click', () => {
+        for(let i=0;i<menu.length;i++){
+            menu[i].classList.toggle('menu_visible')
+        }
+    })
+}
+
+
+
+

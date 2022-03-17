@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -18,6 +19,15 @@ body {
   display: block;
 }
 
+.english_footer {
+  display: none;
+}
+
+.spanish_footer {
+  display: -ms-grid;
+  display: grid;
+}
+
 .header {
   background: #DCD0C2;
   font-size: 18px;
@@ -30,11 +40,17 @@ body {
 }
 
 .header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-family: 'Julius Sans One', sans-serif;
   font-size: 14px;
@@ -67,6 +83,8 @@ body {
 }
 
 .header .navbarList {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
   margin-right: 160px;
@@ -75,6 +93,8 @@ body {
 .header .nav_item {
   margin: 0 20px;
   text-transform: uppercase;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   line-height: 80px;
 }
@@ -87,6 +107,7 @@ body {
 }
 
 .header .nav_linkMenu {
+  -webkit-transition: 0.2s;
   transition: 0.2s;
   padding-bottom: 5px;
 }
@@ -107,8 +128,12 @@ body {
   border: none;
   position: relative;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   outline: none;
   height: 30px;
   width: 70px;
@@ -127,21 +152,25 @@ body {
 .header .btn_idioma span .español_img {
   width: 53px;
   height: 30px;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .header .btn_idioma span .español_img:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .header .btn_idioma span .ingles_img {
   width: 30px;
   height: 30px;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .header .btn_idioma span .ingles_img:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
@@ -155,8 +184,13 @@ body {
     line-height: 70px;
   }
   .header .navbarList {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 5px;
     margin-right: 50%;
     margin-left: 40%;
@@ -169,6 +203,7 @@ body {
     height: calc(90% - 70px);
     overflow-y: auto;
     left: -100%;
+    -webkit-transition: all 1s;
     transition: all 1s;
   }
   .header .nav_item {
@@ -215,11 +250,16 @@ body {
 footer {
   background-color: #E8B4B7;
   position: static;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "links logo designers";
-  align-items: center;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "links logo designers";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   justify-items: center;
   height: 180px;
   width: 100%;
@@ -227,12 +267,19 @@ footer {
 
 @media (max-width: 768px) {
   footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 footer .contacto_footer {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: links;
   text-align: center;
 }
@@ -244,8 +291,13 @@ footer .contacto_footer h5 {
 }
 
 footer .contacto_footer .buttons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   list-style: none;
 }
 
@@ -262,6 +314,7 @@ footer .contacto_footer .buttons ul li i {
   border-radius: 50%;
   padding: 10px;
   font-size: 30px;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -282,11 +335,22 @@ footer .contacto_footer .location_footer p {
 }
 
 footer .logo_footer {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: logo;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 footer .logo_footer h1 {
@@ -302,6 +366,8 @@ footer .logo_footer img {
 }
 
 footer .design_footer {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: designers;
 }
 
@@ -344,9 +410,14 @@ footer .design_footer ul li p {
 .section1 {
   width: 100%;
   height: 640px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-bottom: 100px;
   margin-top: 100px;
 }
@@ -355,9 +426,16 @@ footer .design_footer ul li p {
   padding-left: 40px;
   width: 620px;
   margin-right: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .section1 .sectionHola .hola {
@@ -390,6 +468,7 @@ footer .design_footer ul li p {
   margin-left: 35%;
   margin-right: 50%;
   margin-top: 70px;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
   color: #FFFFFF;
 }
@@ -420,9 +499,14 @@ footer .design_footer ul li p {
 }
 
 .sectionAyudarte .section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 30px;
 }
 
@@ -463,7 +547,8 @@ footer .design_footer ul li p {
 }
 
 .sectionAyudarte .section2 .brandingHome:hover {
-  box-shadow: rgba(23, 23, 26, 0.2) 0px 7px 29px 0px;
+  -webkit-box-shadow: rgba(23, 23, 26, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(23, 23, 26, 0.2) 0px 7px 29px 0px;
 }
 
 .sectionProyectos {
@@ -482,9 +567,14 @@ footer .design_footer ul li p {
 }
 
 .sectionProyectos .proyectos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 10px 0;
 }
 
@@ -492,9 +582,17 @@ footer .design_footer ul li p {
   text-decoration: none;
   margin: 0 10px;
   background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row nowrap;
-  align-items: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -509,7 +607,8 @@ footer .design_footer ul li p {
 }
 
 .sectionProyectos .proyectos a:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .sectionProyectos .proyectos .proy1_6 {
@@ -561,7 +660,10 @@ footer .design_footer ul li p {
     margin-bottom: 50px;
   }
   .section2 {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .section2 .brandingHome {
     width: 262px;
@@ -569,48 +671,68 @@ footer .design_footer ul li p {
     margin: 10px 20px;
   }
   .sectionProyectos .proyectos1 {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 'digital1 digital1' 'branding1 comunicacion1';
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 'digital1 digital1' 'branding1 comunicacion1';
   }
   .sectionProyectos .proyectos1 .digital1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: digital1;
     width: 660px;
     height: 240px;
   }
   .sectionProyectos .proyectos1 .branding1 {
     margin-top: 10px;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: branding1;
     width: 320px;
     height: 240px;
   }
   .sectionProyectos .proyectos1 .comunicacion1 {
     margin-top: 10px;
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
     grid-area: comunicacion1;
     width: 320px;
     height: 240px;
   }
   .sectionProyectos .proyectos2 {
     margin-top: 40px;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 'branding2 branding2' 'digital2 comunicacion2';
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 'branding2 branding2' 'digital2 comunicacion2';
   }
   .sectionProyectos .proyectos2 .digital2 {
     margin-top: 10px;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: digital2;
     width: 320px;
     height: 240px;
   }
   .sectionProyectos .proyectos2 .branding2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: branding2;
     width: 660px;
     height: 240px;
   }
   .sectionProyectos .proyectos2 .comunicacion2 {
     margin-top: 10px;
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
     grid-area: comunicacion2;
     width: 320px;
     height: 240px;
@@ -646,14 +768,28 @@ footer .design_footer ul li p {
     padding-bottom: 30px;
   }
   .contactForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .contactForm .formGrid {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     grid-row-gap: 10px;
   }
   .contactForm .formGrid input, .contactForm .formGrid textarea {
@@ -667,6 +803,27 @@ footer .design_footer ul li p {
     color: black;
     font-weight: bolder;
     padding-left: 20px;
+  }
+  .contactForm .formGrid input::-webkit-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 3vw;
+    font-weight: bolder;
+    color: black;
+  }
+  .contactForm .formGrid input:-ms-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 3vw;
+    font-weight: bolder;
+    color: black;
+  }
+  .contactForm .formGrid input::-ms-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 3vw;
+    font-weight: bolder;
+    color: black;
   }
   .contactForm .formGrid input::placeholder {
     font-family: 'Montserrat', sans-serif;
@@ -684,6 +841,27 @@ footer .design_footer ul li p {
     letter-spacing: 1px;
     color: black;
     font-weight: bolder;
+  }
+  .contactForm .formGrid textarea::-webkit-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 3vw;
+    font-weight: bolder;
+    color: black;
+  }
+  .contactForm .formGrid textarea:-ms-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 3vw;
+    font-weight: bolder;
+    color: black;
+  }
+  .contactForm .formGrid textarea::-ms-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 3vw;
+    font-weight: bolder;
+    color: black;
   }
   .contactForm .formGrid textarea::placeholder {
     font-family: 'Montserrat', sans-serif;
@@ -704,15 +882,23 @@ footer .design_footer ul li p {
     text-align: center;
     font-size: 18px;
     font-weight: 400;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
   }
   .contactForm .form_submit:hover {
     background-color: #c24e54;
   }
   .form__floatRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .form__floatRight img {
     width: 80vw;
@@ -758,14 +944,19 @@ footer .design_footer ul li p {
   }
   .formGrid {
     width: 32vw;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 12vw 18vw;
-    grid-template-rows: 5.8vh 24.5vh;
-    grid-template-areas: "name email" "message message";
+    -ms-grid-columns: 12vw 18vw;
+        grid-template-columns: 12vw 18vw;
+    -ms-grid-rows: 5.8vh 24.5vh;
+        grid-template-rows: 5.8vh 24.5vh;
+        grid-template-areas: "name email" "message message";
     grid-column-gap: 1vw;
     grid-row-gap: 2vh;
   }
   .form_name {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: name;
     width: 12vw;
     height: 5.8vh;
@@ -776,6 +967,27 @@ footer .design_footer ul li p {
     letter-spacing: 1px;
     color: black;
     font-weight: bolder;
+  }
+  .form_name::-webkit-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 0.93vw;
+    font-weight: bolder;
+    color: black;
+  }
+  .form_name:-ms-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 0.93vw;
+    font-weight: bolder;
+    color: black;
+  }
+  .form_name::-ms-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 0.93vw;
+    font-weight: bolder;
+    color: black;
   }
   .form_name::placeholder {
     font-family: 'Montserrat', sans-serif;
@@ -795,6 +1007,27 @@ footer .design_footer ul li p {
     color: black;
     font-weight: bolder;
   }
+  .form_email::-webkit-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 0.93vw;
+    font-weight: bolder;
+    color: black;
+  }
+  .form_email:-ms-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 0.93vw;
+    font-weight: bolder;
+    color: black;
+  }
+  .form_email::-ms-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 0.93vw;
+    font-weight: bolder;
+    color: black;
+  }
   .form_email::placeholder {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -803,6 +1036,9 @@ footer .design_footer ul li p {
     color: black;
   }
   .form_message {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: message;
     width: 31vw;
     height: 24.5vh;
@@ -813,6 +1049,27 @@ footer .design_footer ul li p {
     letter-spacing: 1px;
     color: black;
     font-weight: bolder;
+  }
+  .form_message::-webkit-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 0.93vw;
+    font-weight: bolder;
+    color: black;
+  }
+  .form_message:-ms-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 0.93vw;
+    font-weight: bolder;
+    color: black;
+  }
+  .form_message::-ms-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 0.93vw;
+    font-weight: bolder;
+    color: black;
   }
   .form_message::placeholder {
     font-family: 'Montserrat', sans-serif;
@@ -834,6 +1091,7 @@ footer .design_footer ul li p {
     text-align: center;
     font-size: 18px;
     font-weight: 400;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
   }
   .form_submit:hover {
@@ -865,9 +1123,15 @@ footer .design_footer ul li p {
 .timeline_section .timeline_container {
   min-height: 100vh;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .timeline_section .timeline_container .timeline {
@@ -920,17 +1184,33 @@ footer .design_footer ul li p {
 }
 
 .tools_container .tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .tools_container .tools div {
   margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .tools_container .tools div h7 {
@@ -949,7 +1229,8 @@ footer .design_footer ul li p {
   .timeline ul li {
     margin-left: 10px;
     margin-right: 20px;
-    transform: translateX(30px);
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
   }
   .timeline ul li::after {
     content: '';
@@ -960,7 +1241,8 @@ footer .design_footer ul li p {
     border: 2px black solid;
     border-radius: 50%;
     top: 0;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     left: -30px;
   }
   .timeline ul li:first-child::after {
@@ -991,12 +1273,20 @@ footer .design_footer ul li p {
     width: 4px;
     background-color: black;
     left: 1.5%;
-    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
   }
   .all_description .img_description {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 80px;
   }
   .all_description .img_description img {
@@ -1061,22 +1351,26 @@ footer .design_footer ul li p {
     float: left;
     clear: right;
     text-align: right;
-    transform: translateX(-30px);
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
     margin-left: 20px;
   }
   .timeline ul li:nth-child(odd)::after {
-    transform: translate(50%, -50%);
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
     right: -10px;
   }
   .timeline ul li:nth-child(even) {
     float: right;
     clear: left;
     text-align: left;
-    transform: translateX(30px);
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
     margin-right: 20px;
   }
   .timeline ul li:nth-child(even)::after {
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     left: -10px;
   }
   .timeline ul li::after {
@@ -1096,7 +1390,8 @@ footer .design_footer ul li p {
     width: 4px;
     background-color: black;
     left: 50%;
-    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
   }
 }
 
@@ -1104,9 +1399,16 @@ footer .design_footer ul li p {
   .all_description {
     margin-top: 130px;
     margin-bottom: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .all_description .description_about {
     background-color: #E8B4B7;
@@ -1145,8 +1447,13 @@ footer .design_footer ul li p {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .all_description {
     margin-top: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
     margin-bottom: 5%;
   }
   .all_description .description_about {
@@ -1181,6 +1488,8 @@ footer .design_footer ul li p {
 }
 
 .sectionAll {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1188,9 +1497,16 @@ footer .design_footer ul li p {
   width: 289px;
   height: 911px;
   background: #E8B4B7;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .sidebar_List {
@@ -1310,9 +1626,16 @@ footer .design_footer ul li p {
 }
 
 .sectionList_Servicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .sectionServicios2 {
@@ -1477,6 +1800,8 @@ footer .design_footer ul li p {
 }
 
 .sectionAll {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 911px;
 }
@@ -1485,9 +1810,16 @@ footer .design_footer ul li p {
   width: 289px;
   height: 911px;
   background: #E8B4B7;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .sidebar_List {
@@ -1534,8 +1866,12 @@ footer .design_footer ul li p {
 }
 
 .projects_branding .branding_calzados {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projects_branding .branding_calzados .branding_text {
@@ -1564,8 +1900,12 @@ footer .design_footer ul li p {
 }
 
 .projects_branding .branding_elza {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 20px;
 }
 
@@ -1602,8 +1942,12 @@ footer .design_footer ul li p {
 }
 
 .projects_digital .digital_mesa {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projects_digital .digital_mesa .digital_text {
@@ -1632,8 +1976,12 @@ footer .design_footer ul li p {
 }
 
 .projects_digital .digital_exessure {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 20px;
 }
 
@@ -1670,8 +2018,12 @@ footer .design_footer ul li p {
 }
 
 .projects_comunicacion .comunicacion_qw {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projects_comunicacion .comunicacion_qw .img_com {
@@ -1705,8 +2057,12 @@ footer .design_footer ul li p {
 }
 
 .projects_comunicacion .comunicacion_vivero {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 10px;
 }
 
@@ -1741,8 +2097,12 @@ footer .design_footer ul li p {
 }
 
 .projects_comunicacion .comunicacion_candy {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 10px;
 }
 

@@ -145,17 +145,14 @@
                         margin-left: 40%;
                         width: 200px;
                         position: fixed;
-                        left: 0;
                         top: 70px;
                         padding: 0;
                         background: #DCD0C2;  
-                        height: calc(90% - 70px);
+                        height: calc(100% - 70px);
                         overflow-y: auto;
-                        left: -100%;
                         transition: all 1s;
+                        left: -100%;
                     }
-
-                   
 
                     .nav_item{
                         line-height: 70px;
@@ -173,7 +170,7 @@
                     }
 
                     .menu_visible{
-                        left: 0;
+                        left: -40%;
                     }
                  
             }
