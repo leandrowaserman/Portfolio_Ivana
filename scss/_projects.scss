@@ -2,27 +2,367 @@
     .sectionAll{
         display: flex;
         flex-flow: column;
-        text-align: center;
+        width: 100vw;
+        justify-content: center;
     }
+    .sectBranding{
+        display: block;
+    }
+
+    .sectDigital{
+        display: none;
+    }
+
+    .sectComunicacion{
+        display: none;
+    }
+
     .sidebarServicios{
         width: 100vw;
         height: 8vh;
-        margin: 80px 0;
+        margin-top: 80px;
+        margin-bottom: 8px;
         background: #E8B4B7;
         .sidebar_List{
             display: flex;
             flex-flow: row;
             align-items: center;
             justify-content:space-between;
+            height: 8vh;
         }
         .linkSidebar{
             width: 33%;
             height: 10vh;
-            margin-top: 20px;
             text-align: center;
             padding: 1.3vw;
-            margin: 0;
-            font-size: 1.5vw;
+            font-size: 2.3vw;
+        }
+    }
+    .projects_branding{
+        width: 100vw;
+        text-align: center;
+        .branding_calzados{
+            padding-bottom: 15px;
+            border-bottom:#E8B4B7 1px solid;
+            .imagen_calzados{
+                width:100vw;
+                img{
+                    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+                }
+            }
+            .branding_text{
+                padding-left: 1.5vw;
+    
+                p{
+                    font-family: 'Montserrat', sans-serif; 
+                    width: 90%;
+                    padding-left: 10%;
+                    text-align: left;
+                }
+    
+                .branding_title{
+                    font-family: 'DM Serif Display', serif;
+                    font-weight: 600;
+                }
+        
+                .list_Projects{
+                    list-style: none;
+                    text-align: left;
+                    padding-left: 10%;
+                    li::before{
+                        content: "\2022";
+                        color: #EC5A61A6;
+                        font-weight: bold;
+                        display: inline-block;
+                        width: 1em;
+                        margin-left: -1em;
+                    }
+                }
+    
+                .item_projects{
+                    font-family: 'Montserrat', sans-serif;
+                    
+                }
+            }
+    
+        }
+    
+        .branding_elza{
+            margin-top: 15px;
+            padding-bottom: 40px;
+            .imagen_elza{
+                width:100vw;
+                img{
+                    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+                }
+            }
+            .branding_text{
+                padding-left: 1.5vw;
+    
+                p{
+                    font-family: 'Montserrat', sans-serif; 
+                    width: 90%;
+                    padding-left: 10%;
+                    text-align: left;
+                }
+    
+                .branding_title{
+                    font-family: 'DM Serif Display', serif;
+                    font-weight: 600;
+                }
+        
+                .list_Projects{
+                    list-style: none;
+                    text-align: left;
+                    padding-left: 10%;
+                    li::before{
+                        content: "\2022";
+                        color: #EC5A61A6;
+                        font-weight: bold;
+                        display: inline-block;
+                        width: 1em;
+                        margin-left: -1em;
+                    }
+                }
+    
+                .item_projects{
+                    font-family: 'Montserrat', sans-serif;
+                    
+                }
+            }
+        }
+        
+    }
+    .projects_digital{
+        width: 100vw;
+        text-align: center;
+        .digital_mesa{
+            padding-bottom: 15px;
+            border-bottom:#E8B4B7 1px solid;
+            .imagen_mesa{
+                width:100vw;
+                img{
+                    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+                }
+            }
+            .digital_text{
+                padding-left: 1.5vw;
+    
+                p{
+                    font-family: 'Montserrat', sans-serif; 
+                    width: 90%;
+                    padding-left: 10%;
+                    text-align: left;
+                }
+    
+                .digital_title{
+                    font-family: 'DM Serif Display', serif;
+                    font-weight: 600;
+                }
+        
+                .list_Projects{
+                    list-style: none;
+                    text-align: left;
+                    padding-left: 10%;
+                    li::before{
+                        content: "\2022";
+                        color: #EC5A61A6;
+                        font-weight: bold;
+                        display: inline-block;
+                        width: 1em;
+                        margin-left: -1em;
+                    }
+                }
+    
+                .item_projects{
+                    font-family: 'Montserrat', sans-serif;
+                    
+                }
+            }
+    
+        } 
+        .digital_exessure{
+            margin-top: 15px;
+            padding-bottom: 40px;
+            .imagen_exessure{
+                width:100vw;
+                img{
+                    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+                }
+            }
+            .branding_text{
+                padding-left: 1.5vw;
+    
+                p{
+                    font-family: 'Montserrat', sans-serif; 
+                    width: 90%;
+                    padding-left: 10%;
+                    text-align: left;
+                }
+    
+                .branding_title{
+                    font-family: 'DM Serif Display', serif;
+                    font-weight: 600;
+                }
+        
+                .list_Projects{
+                    list-style: none;
+                    text-align: left;
+                    padding-left: 10%;
+                    li::before{
+                        content: "\2022";
+                        color: #EC5A61A6;
+                        font-weight: bold;
+                        display: inline-block;
+                        width: 1em;
+                        margin-left: -1em;
+                    }
+                }
+    
+                .item_projects{
+                    font-family: 'Montserrat', sans-serif;
+                    
+                }
+            }
+        }
+        
+    }
+    .projects_comunicacion{
+        width: 100vw;
+        text-align: center;
+        .comunicacion_qw{
+            padding-bottom: 15px;
+            border-bottom:#E8B4B7 1px solid;
+            .imagen_qw{
+                width:100vw;
+                img{
+                    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+                }
+            }
+            .branding_text{
+                padding-left: 1.5vw;
+    
+                p{
+                    font-family: 'Montserrat', sans-serif; 
+                    width: 90%;
+                    padding-left: 10%;
+                    text-align: left;
+                }
+    
+                .branding_title{
+                    font-family: 'DM Serif Display', serif;
+                    font-weight: 600;
+                }
+        
+                .list_Projects{
+                    list-style: none;
+                    text-align: left;
+                    padding-left: 10%;
+                    li::before{
+                        content: "\2022";
+                        color: #EC5A61A6;
+                        font-weight: bold;
+                        display: inline-block;
+                        width: 1em;
+                        margin-left: -1em;
+                    }
+                }
+    
+                .item_projects{
+                    font-family: 'Montserrat', sans-serif;
+                    
+                }
+            }
+    
+        }
+        .comunicacion_vivero{
+            margin-top: 15px;
+            padding-bottom: 15px;
+            border-bottom:#E8B4B7 1px solid;
+            .imagen_vivero{
+                width:100vw;
+                img{
+                    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+                }
+            }
+            .branding_text{
+                padding-left: 1.5vw;
+    
+                p{
+                    font-family: 'Montserrat', sans-serif; 
+                    width: 90%;
+                    padding-left: 10%;
+                    text-align: left;
+                }
+    
+                .branding_title{
+                    font-family: 'DM Serif Display', serif;
+                    font-weight: 600;
+                }
+        
+                .list_Projects{
+                    list-style: none;
+                    text-align: left;
+                    padding-left: 10%;
+                    li::before{
+                        content: "\2022";
+                        color: #EC5A61A6;
+                        font-weight: bold;
+                        display: inline-block;
+                        width: 1em;
+                        margin-left: -1em;
+                    }
+                }
+    
+                .item_projects{
+                    font-family: 'Montserrat', sans-serif;
+                    
+                }
+            }
+        }
+        .comunicacion_candy{
+            margin-top: 15px;
+            padding-bottom: 40px;
+            .imagen_candy{
+                width:100vw;
+                img{
+                    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+                }
+            }
+            .branding_text{
+                padding-left: 1.5vw;
+    
+                p{
+                    font-family: 'Montserrat', sans-serif; 
+                    width: 90%;
+                    padding-left: 10%;
+                    text-align: left;
+                }
+    
+                .branding_title{
+                    font-family: 'DM Serif Display', serif;
+                    font-weight: 600;
+                }
+        
+                .list_Projects{
+                    list-style: none;
+                    text-align: left;
+                    padding-left: 10%;
+                    li::before{
+                        content: "\2022";
+                        color: #EC5A61A6;
+                        font-weight: bold;
+                        display: inline-block;
+                        width: 1em;
+                        margin-left: -1em;
+                    }
+                }
+    
+                .item_projects{
+                    font-family: 'Montserrat', sans-serif;
+                    
+                }
+            }
         }
     }
 }

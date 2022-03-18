@@ -249,6 +249,7 @@ footer {
 @media (max-width: 768px) {
   footer {
     height: 100%;
+    width: 100vw;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 'logo' 'btn' 'links' 'designers'; }
@@ -269,7 +270,7 @@ footer {
     footer .btn_responsive {
       display: block;
       background: #EC5A61;
-      width: 608px;
+      width: 100vw;
       height: 1px;
       border: 1px solid #EC5A61;
       margin-top: 10px; }
@@ -282,7 +283,7 @@ footer {
     footer .design_footer {
       background: #F39498;
       padding: 15px;
-      width: 100%;
+      width: 100vw;
       margin-top: 50px; }
       footer .design_footer .title_footer1 {
         display: none; }
@@ -1191,25 +1192,252 @@ footer {
   .sectionAll {
     display: flex;
     flex-flow: column;
-    text-align: center; }
+    width: 100vw;
+    justify-content: center; }
+  .sectBranding {
+    display: block; }
+  .sectDigital {
+    display: none; }
+  .sectComunicacion {
+    display: none; }
   .sidebarServicios {
     width: 100vw;
     height: 8vh;
-    margin: 80px 0;
+    margin-top: 80px;
+    margin-bottom: 8px;
     background: #E8B4B7; }
     .sidebarServicios .sidebar_List {
       display: flex;
       flex-flow: row;
       align-items: center;
-      justify-content: space-between; }
+      justify-content: space-between;
+      height: 8vh; }
     .sidebarServicios .linkSidebar {
       width: 33%;
       height: 10vh;
-      margin-top: 20px;
       text-align: center;
       padding: 1.3vw;
-      margin: 0;
-      font-size: 1.5vw; } }
+      font-size: 2.3vw; }
+  .projects_branding {
+    width: 100vw;
+    text-align: center; }
+    .projects_branding .branding_calzados {
+      padding-bottom: 15px;
+      border-bottom: #E8B4B7 1px solid; }
+      .projects_branding .branding_calzados .imagen_calzados {
+        width: 100vw; }
+        .projects_branding .branding_calzados .imagen_calzados img {
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px; }
+      .projects_branding .branding_calzados .branding_text {
+        padding-left: 1.5vw; }
+        .projects_branding .branding_calzados .branding_text p {
+          font-family: 'Montserrat', sans-serif;
+          width: 90%;
+          padding-left: 10%;
+          text-align: left; }
+        .projects_branding .branding_calzados .branding_text .branding_title {
+          font-family: 'DM Serif Display', serif;
+          font-weight: 600; }
+        .projects_branding .branding_calzados .branding_text .list_Projects {
+          list-style: none;
+          text-align: left;
+          padding-left: 10%; }
+          .projects_branding .branding_calzados .branding_text .list_Projects li::before {
+            content: "\2022";
+            color: #EC5A61A6;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em; }
+        .projects_branding .branding_calzados .branding_text .item_projects {
+          font-family: 'Montserrat', sans-serif; }
+    .projects_branding .branding_elza {
+      margin-top: 15px;
+      padding-bottom: 40px; }
+      .projects_branding .branding_elza .imagen_elza {
+        width: 100vw; }
+        .projects_branding .branding_elza .imagen_elza img {
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px; }
+      .projects_branding .branding_elza .branding_text {
+        padding-left: 1.5vw; }
+        .projects_branding .branding_elza .branding_text p {
+          font-family: 'Montserrat', sans-serif;
+          width: 90%;
+          padding-left: 10%;
+          text-align: left; }
+        .projects_branding .branding_elza .branding_text .branding_title {
+          font-family: 'DM Serif Display', serif;
+          font-weight: 600; }
+        .projects_branding .branding_elza .branding_text .list_Projects {
+          list-style: none;
+          text-align: left;
+          padding-left: 10%; }
+          .projects_branding .branding_elza .branding_text .list_Projects li::before {
+            content: "\2022";
+            color: #EC5A61A6;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em; }
+        .projects_branding .branding_elza .branding_text .item_projects {
+          font-family: 'Montserrat', sans-serif; }
+  .projects_digital {
+    width: 100vw;
+    text-align: center; }
+    .projects_digital .digital_mesa {
+      padding-bottom: 15px;
+      border-bottom: #E8B4B7 1px solid; }
+      .projects_digital .digital_mesa .imagen_mesa {
+        width: 100vw; }
+        .projects_digital .digital_mesa .imagen_mesa img {
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px; }
+      .projects_digital .digital_mesa .digital_text {
+        padding-left: 1.5vw; }
+        .projects_digital .digital_mesa .digital_text p {
+          font-family: 'Montserrat', sans-serif;
+          width: 90%;
+          padding-left: 10%;
+          text-align: left; }
+        .projects_digital .digital_mesa .digital_text .digital_title {
+          font-family: 'DM Serif Display', serif;
+          font-weight: 600; }
+        .projects_digital .digital_mesa .digital_text .list_Projects {
+          list-style: none;
+          text-align: left;
+          padding-left: 10%; }
+          .projects_digital .digital_mesa .digital_text .list_Projects li::before {
+            content: "\2022";
+            color: #EC5A61A6;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em; }
+        .projects_digital .digital_mesa .digital_text .item_projects {
+          font-family: 'Montserrat', sans-serif; }
+    .projects_digital .digital_exessure {
+      margin-top: 15px;
+      padding-bottom: 40px; }
+      .projects_digital .digital_exessure .imagen_exessure {
+        width: 100vw; }
+        .projects_digital .digital_exessure .imagen_exessure img {
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px; }
+      .projects_digital .digital_exessure .branding_text {
+        padding-left: 1.5vw; }
+        .projects_digital .digital_exessure .branding_text p {
+          font-family: 'Montserrat', sans-serif;
+          width: 90%;
+          padding-left: 10%;
+          text-align: left; }
+        .projects_digital .digital_exessure .branding_text .branding_title {
+          font-family: 'DM Serif Display', serif;
+          font-weight: 600; }
+        .projects_digital .digital_exessure .branding_text .list_Projects {
+          list-style: none;
+          text-align: left;
+          padding-left: 10%; }
+          .projects_digital .digital_exessure .branding_text .list_Projects li::before {
+            content: "\2022";
+            color: #EC5A61A6;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em; }
+        .projects_digital .digital_exessure .branding_text .item_projects {
+          font-family: 'Montserrat', sans-serif; }
+  .projects_comunicacion {
+    width: 100vw;
+    text-align: center; }
+    .projects_comunicacion .comunicacion_qw {
+      padding-bottom: 15px;
+      border-bottom: #E8B4B7 1px solid; }
+      .projects_comunicacion .comunicacion_qw .imagen_qw {
+        width: 100vw; }
+        .projects_comunicacion .comunicacion_qw .imagen_qw img {
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px; }
+      .projects_comunicacion .comunicacion_qw .branding_text {
+        padding-left: 1.5vw; }
+        .projects_comunicacion .comunicacion_qw .branding_text p {
+          font-family: 'Montserrat', sans-serif;
+          width: 90%;
+          padding-left: 10%;
+          text-align: left; }
+        .projects_comunicacion .comunicacion_qw .branding_text .branding_title {
+          font-family: 'DM Serif Display', serif;
+          font-weight: 600; }
+        .projects_comunicacion .comunicacion_qw .branding_text .list_Projects {
+          list-style: none;
+          text-align: left;
+          padding-left: 10%; }
+          .projects_comunicacion .comunicacion_qw .branding_text .list_Projects li::before {
+            content: "\2022";
+            color: #EC5A61A6;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em; }
+        .projects_comunicacion .comunicacion_qw .branding_text .item_projects {
+          font-family: 'Montserrat', sans-serif; }
+    .projects_comunicacion .comunicacion_vivero {
+      margin-top: 15px;
+      padding-bottom: 15px;
+      border-bottom: #E8B4B7 1px solid; }
+      .projects_comunicacion .comunicacion_vivero .imagen_vivero {
+        width: 100vw; }
+        .projects_comunicacion .comunicacion_vivero .imagen_vivero img {
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px; }
+      .projects_comunicacion .comunicacion_vivero .branding_text {
+        padding-left: 1.5vw; }
+        .projects_comunicacion .comunicacion_vivero .branding_text p {
+          font-family: 'Montserrat', sans-serif;
+          width: 90%;
+          padding-left: 10%;
+          text-align: left; }
+        .projects_comunicacion .comunicacion_vivero .branding_text .branding_title {
+          font-family: 'DM Serif Display', serif;
+          font-weight: 600; }
+        .projects_comunicacion .comunicacion_vivero .branding_text .list_Projects {
+          list-style: none;
+          text-align: left;
+          padding-left: 10%; }
+          .projects_comunicacion .comunicacion_vivero .branding_text .list_Projects li::before {
+            content: "\2022";
+            color: #EC5A61A6;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em; }
+        .projects_comunicacion .comunicacion_vivero .branding_text .item_projects {
+          font-family: 'Montserrat', sans-serif; }
+    .projects_comunicacion .comunicacion_candy {
+      margin-top: 15px;
+      padding-bottom: 40px; }
+      .projects_comunicacion .comunicacion_candy .imagen_candy {
+        width: 100vw; }
+        .projects_comunicacion .comunicacion_candy .imagen_candy img {
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px; }
+      .projects_comunicacion .comunicacion_candy .branding_text {
+        padding-left: 1.5vw; }
+        .projects_comunicacion .comunicacion_candy .branding_text p {
+          font-family: 'Montserrat', sans-serif;
+          width: 90%;
+          padding-left: 10%;
+          text-align: left; }
+        .projects_comunicacion .comunicacion_candy .branding_text .branding_title {
+          font-family: 'DM Serif Display', serif;
+          font-weight: 600; }
+        .projects_comunicacion .comunicacion_candy .branding_text .list_Projects {
+          list-style: none;
+          text-align: left;
+          padding-left: 10%; }
+          .projects_comunicacion .comunicacion_candy .branding_text .list_Projects li::before {
+            content: "\2022";
+            color: #EC5A61A6;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em; }
+        .projects_comunicacion .comunicacion_candy .branding_text .item_projects {
+          font-family: 'Montserrat', sans-serif; } }
 
 @media (min-width: 1024px) {
   .sectionAll {

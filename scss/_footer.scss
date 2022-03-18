@@ -119,6 +119,7 @@ footer{
 @media (max-width: 768px) {
     footer{
         height: 100%;
+        width: 100vw;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: 'logo'
@@ -151,7 +152,7 @@ footer{
         .btn_responsive{
             display: block;
             background: #EC5A61;
-            width: 608px;
+            width: 100vw;
             height: 1px;
             border: 1px solid #EC5A61;
             margin-top: 10px;
@@ -170,7 +171,7 @@ footer{
         .design_footer{
             background: #F39498;
             padding: 15px;
-            width: 100%;
+            width: 100vw;
             margin-top: 50px;
 
             .title_footer1{
