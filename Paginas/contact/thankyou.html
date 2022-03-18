@@ -13,7 +13,7 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <!-- Style -->
-    <link rel="stylesheet" href="./contacto.css">
+    <link rel="stylesheet" href="../../scss/styles.css">
 </head>
 <body>
     <header class="header">
@@ -34,43 +34,39 @@
     <body>
         <header class="header spanish">
             <nav class="navbar">
-                    <a href="../../Home/index.html" class="logo nav_link"><img src="../../img/Component 1.svg" class="logo_svg" alt="logo"><h1 class="titulo_logo">IVANA GUARDAMAÑA</h1></a>
-                    <button class="boton" id="boton_menu">
-                        <i class="bi bi-list"></i>
-                    </button>    
-                        <ul class="navbarList" id="navbar">
-                            <li class="nav_item"><a href="../../Home/index.html" class="nav_link nav_linkMenu">INICIO</a></li>
-                            <li class="nav_item container--submenu">
-                                <a href="../services/services.html" class="nav_link nav_linkMenu submenu-btn">SERVICIOS<!--<i class="fa-solid fa-angle-down"></i>--></a>
-                                    <!--<ul class="submenu">
-                                        <li class="nav_item"><a href="" class="nav_link">Branding</a></li>
-                                        <li class="nav_item"><a href="" class="nav_link">Digital</a></li>
-                                        <li class="nav_item"><a href="" class="nav_link">Comunicaciones</a></li>
-                                    </ul>-->
-                            </li>
-                            <li class="nav_item"><a href="../projects/projects.html" class="nav_link nav_linkMenu">PROYECTOS</a></li>
-                            <li class="nav_item"><a href="../about/about.html" class="nav_link nav_linkMenu">SOBRE MI</a></li>
-                            <li class="nav_item"><a href="../contact/contact.html" class="nav_link nav_linkMenu nav_linkMenu__active">CONTACTO</a></li>
-                        </ul>   
-                </nav>
-        
+                <a href="../../index.html" class="logo nav_link"><img src="../../img/Component 1.svg" class="logo_svg" alt="logo"><h1 class="titulo_logo">IVANA GUARDAMAÑA</h1></a>
+                <button class="boton" id="boton_menu">
+                    <i class="bi bi-list"></i>
+                </button>    
+                    <ul class="navbarList nav_inactive" id="navbar">
+                        <li class="nav_item"><a href="../../index.html" class="nav_link nav_linkMenu">INICIO</a></li>
+                        <li class="nav_item container--submenu"><a href="../services/services.html" class="nav_link nav_linkMenu submenu-btn">SERVICIOS</a></li>
+                        <li class="nav_item"><a href="../projects/projects.html" class="nav_link nav_linkMenu">PROYECTOS</a></li>
+                        <li class="nav_item"><a href="../about/about.html" class="nav_link nav_linkMenu">SOBRE MI</a></li>
+                        <li class="nav_item"><a href="../contact/contact.html" class="nav_link nav_linkMenu nav_linkMenu__active">CONTACTO</a></li>
+                        <button class="btn_idioma" id="btn_ingles">
+                            <span><img class="ingles_img" src="../../img/flag-england.png" alt="ingles"></span>
+                        </button>
+                    </ul>   
+            </nav>
         </header>
-        
-        <main class="spanish">
+
+        <main class="spanish contact">
             <section class="form__floatLeft">
-                <h2 class="contactame">¡Gracias por contactarme!</h2>
+                <p class="pre-title">Tu mensaje ha sido enviado correctamente</p>
+                <h2 class="contactame">¡Gracias por ponerte en contacto!</h2>
             </section>
             <section class="form__floatRight">
                 <img src="../../img/imgContact.svg" alt="" class="contactimg">
             </section>
         </main>
-        <footer class="titulos spanish">
+        <footer class="spanish_footer footer_form">
             <section class="contacto_footer">
                 <h5>¡Contactame!</h5>
                 <div class="buttons">
-                 <ul class="footer_list">
+                    <ul class="footer_list">
                         <li>
-                            <i class="bi bi-whatsapp"></i> 
+                           <i class="bi bi-whatsapp"></i> 
                         </li>
                         <li>
                             <i class="bi bi-envelope"></i>
@@ -118,86 +114,85 @@
                 </ul>
             </section>
         </footer>
-        <!-- INGLES -->
-        <header class="header english">
-            <nav class="navbar">
-                    <a href="../../Home/index.html" class="logo nav_link"><img src="../../img/Component 1.svg" class="logo_svg" alt="logo"><h1 class="titulo_logo">IVANA GUARDAMAÑA</h1></a>
-                    <button class="boton" id="boton_menu">
-                        <i class="bi bi-list"></i>
-                    </button>    
-                        <ul class="navbarList" id="navbar">
-                            <li class="nav_item"><a href="../../Home/index.html" class="nav_link nav_linkMenu">HOME</a></li>
-                            <li class="nav_item container--submenu">
-                                <a href="../services/services.html" class="nav_link nav_linkMenu submenu-btn">SERVICES<!--<i class="fa-solid fa-angle-down"></i>--></a>
-                                    <!--<ul class="submenu">
-                                        <li class="nav_item"><a href="" class="nav_link">Branding</a></li>
-                                        <li class="nav_item"><a href="" class="nav_link">Digital</a></li>
-                                        <li class="nav_item"><a href="" class="nav_link">Comunicaciones</a></li>
-                                    </ul>-->
-                            </li>
-                            <li class="nav_item"><a href="../projects/projects.html" class="nav_link nav_linkMenu">PROJECTS</a></li>
-                            <li class="nav_item"><a href="../about/about.html" class="nav_link nav_linkMenu">ABOUT</a></li>
-                            <li class="nav_item"><a href="../contact/contact.html" class="nav_link nav_linkMenu nav_linkMenu__active">CONTACT</a></li>
-                        </ul>
-                </nav>
-        </header>
-        <main class="english">
-            <section class="form__floatLeft">
-                <h2 class="contactame">Thank you for contacting me!</h2>
-            </section>
-            <section class="Form__floatRight">
-                <img src="" alt="">
-            </section>
-        </main>
-        <footer class="titulos english">
-            <section class="contacto_footer">
-                <h5>Contact me</h5>
-                <div class="buttons">
-                 <ul class="footer_list">
-                        <li>
-                            <i class="bi bi-whatsapp"></i> 
-                        </li>
-                        <li>
-                            <i class="bi bi-envelope"></i>
-                        </li>
-                        <li>
-                            <i class="bi bi-behance"></i>
-                        </li>
-                        <li>
-                            <i class="bi bi-linkedin"></i>
-                        </li>
-                    </ul>
-                </div> 
-                <div class="mail_footer">
-                    <p>Ivana.guardamagna@gmail.com</p>
-                </div>
-                <div class="location_footer">
-                    <p>Neuquén Capital, Argentina</p>
-                </div>
-            </section>
-            <section class="logo_footer">
-                <img src="../../img/Component 1.svg" class="logo_svg" alt="logo">
-                <h1 class="titulo_logo">IVANA GUARDAMAÑA</h1>
-            </section>
-            <section class="design_footer">
-                <h5>Web Design:</h5>
-                <ul>
+    <!-- INGLES -->
+    <header class="header english">
+        <nav class="navbar">
+                <a href="../../index.html" class="logo nav_link"><img src="../../img/Component 1.svg" class="logo_svg" alt="logo"><h1 class="titulo_logo">IVANA GUARDAMAÑA</h1></a>
+                <button class="boton" id="boton_menu">
+                    <i class="bi bi-list"></i>
+                </button>    
+                    <ul class="navbarList nav_inactive" id="navbar">
+                        <li class="nav_item"><a href="../../index.html" class="nav_link nav_linkMenu">HOME</a></li>
+                        <li class="nav_item container--submenu"><a href="../services/services.html" class="nav_link nav_linkMenu submenu-btn">SERVICES</a></li>
+                        <li class="nav_item"><a href="../projects/projects.html" class="nav_link nav_linkMenu">PROJECTS</a></li>
+                        <li class="nav_item"><a href="../about/about.html" class="nav_link nav_linkMenu">ABOUT</a></li>
+                        <li class="nav_item"><a href="../contact/contact.html" class="nav_link nav_linkMenu nav_linkMenu__active">CONTACT</a></li>
+                        <button class="btn_idioma" id="btn_español">
+                            <span><img class="español_img" src="../../img/flag3-spain-removebg-preview.png" alt="español"></span>
+                        </button>
+                    </ul>   
+            </nav>
+    </header>
+
+    <main class="spanish contact">
+        <section class="form__floatLeft">
+            <p class="pre-title">Your message has been delivered</p>
+            <h2 class="contactame">Thank you for contacting me!</h2>
+        </section>
+        <section class="form__floatRight">
+            <img src="../../img/imgContact.svg" alt="" class="contactimg">
+        </section>
+    </main>
+    <footer class="english_footer footer_form">
+        <section class="contacto_footer">
+            <h5>Contact me!</h5>
+            <div class="buttons">
+                <ul class="footer_list">
                     <li>
-                        <p><a href=""><i class="bi bi-linkedin"></i></a>Germán Benavides</p>
+                        <i class="bi bi-whatsapp"></i> 
                     </li>
                     <li>
-                        <p><a href=""><i class="bi bi-linkedin"></i></a>Julieta Milito</p>
-    
+                        <i class="bi bi-envelope"></i>
                     </li>
                     <li>
-                        <p><a href=""><i class="bi bi-linkedin"></i></a>Leandro Waserman</p>
+                        <i class="bi bi-behance"></i>
                     </li>
                     <li>
-                        <p><a href=""><i class="bi bi-linkedin"></i></a>Brenda Zaya</p>
+                        <i class="bi bi-linkedin"></i>
                     </li>
                 </ul>
-            </section>
-        </footer>
-         <!-- Js Funciones -->
+            </div> 
+            <div class="mail_footer">
+                <p>Ivana.guardamagna@gmail.com</p>
+            </div>
+            <div class="location_footer">
+                <p>Neuquén Capital, Argentina</p>
+            </div>
+        </section>
+        <section class="logo_footer">
+            <img src="../../img/Component 1.svg" class="logo_svg" alt="logo">
+            <h1 class="titulo_logo">IVANA GUARDAMAÑA</h1>
+        </section>
+        <section class="design_footer">
+            <h5>Web Design:</h5>
+            <ul>
+                <li>
+                    <p><a href=""><i class="bi bi-linkedin"></i></a>Germán Benavides</p>
+                </li>
+                <li>
+                    <p><a href=""><i class="bi bi-linkedin"></i></a>Julieta Milito</p>
+
+                </li>
+                <li>
+                    <p><a href=""><i class="bi bi-linkedin"></i></a>Leandro Waserman</p>
+                </li>
+                <li>
+                    <p><a href=""><i class="bi bi-linkedin"></i></a>Brenda Zaya</p>
+                </li>
+            </ul>
+        </section>
+    </footer>
+
+    <!-- Js Funciones -->
     <script src="../../Javascript/main.js"></script>
     </body>

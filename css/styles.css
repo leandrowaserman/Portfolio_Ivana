@@ -138,7 +138,8 @@ body {
       color: crimson; }
     .header .boton {
       display: block;
-      height: 70px; }
+      height: 70px;
+      cursor: pointer; }
     .header .menu_visible {
       left: -40%; } }
   @media (max-width: 990px) {
@@ -169,10 +170,6 @@ footer {
   justify-items: center;
   height: 180px;
   width: 100%; }
-  @media (max-width: 768px) {
-    footer {
-      display: flex;
-      flex-direction: column; } }
   footer .contacto_footer {
     grid-area: links;
     text-align: center; }
@@ -220,8 +217,12 @@ footer {
       width: 60px;
       margin-bottom: 10px;
       margin-top: 0; }
+  footer .btn_responsive {
+    display: none; }
   footer .design_footer {
     grid-area: designers; }
+    footer .design_footer .title_footer2 {
+      display: none; }
     footer .design_footer h5 {
       font-family: 'Montserrat', sans-serif;
       font-size: 22px;
@@ -244,6 +245,67 @@ footer {
         footer .design_footer ul li p {
           font-family: 'Montserrat', sans-serif;
           font-size: 16px; }
+
+@media (max-width: 768px) {
+  footer {
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'logo' 'btn' 'links' 'designers'; }
+    footer .logo_footer {
+      margin-top: 20px;
+      height: 97px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      footer .logo_footer .titulo_logo {
+        font-size: 22px;
+        margin-left: 10px;
+        width: 200px; }
+      footer .logo_footer .logo_svg {
+        width: 90px;
+        height: 90px; }
+    footer .btn_responsive {
+      display: block;
+      background: #EC5A61;
+      width: 608px;
+      height: 1px;
+      border: 1px solid #EC5A61;
+      margin-top: 10px; }
+    footer .contacto_footer {
+      margin-top: 50px; }
+      footer .contacto_footer .buttons {
+        margin-top: 10px; }
+      footer .contacto_footer .mail_footer {
+        margin-top: 10px; }
+    footer .design_footer {
+      background: #F39498;
+      padding: 15px;
+      width: 100%;
+      margin-top: 50px; }
+      footer .design_footer .title_footer1 {
+        display: none; }
+      footer .design_footer .title_footer2 {
+        display: block; }
+      footer .design_footer h5 {
+        font-size: 4vw;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 10px; }
+      footer .design_footer .design_list_resp {
+        display: flex;
+        justify-content: space-between; }
+        footer .design_footer .design_list_resp .design_resp1 {
+          padding: 20px 0;
+          width: 300px; }
+          footer .design_footer .design_list_resp .design_resp1 p {
+            margin-top: 15px; }
+        footer .design_footer .design_list_resp .design_resp2 {
+          padding: 20px;
+          width: 300px; }
+          footer .design_footer .design_list_resp .design_resp2 p {
+            margin-top: 15px; } }
 
 .main_top {
   margin-top: 100px; }
@@ -1125,200 +1187,213 @@ footer {
     background: #EC5A61;
     margin-top: 250px; }
 
-.sectionAll {
-  display: flex;
-  height: 911px; }
-
-.sidebarServicios {
-  width: 289px;
-  height: 911px;
-  background: #E8B4B7;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-.sidebar_List {
-  list-style: none; }
-
-.linkSidebar {
-  display: block;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  color: #FFFFFF;
-  margin: 80px 0;
-  padding-left: 40px;
-  cursor: pointer;
-  height: 67px;
-  width: 289px;
-  line-height: 67px; }
-  .linkSidebar:hover {
-    background: #FFFFFF;
-    color: #EC5A61;
-    font-weight: bold; }
-
-.sectBranding {
-  display: block; }
-
-.sectDigital {
-  display: none; }
-
-.sectComunicacion {
-  display: none; }
-
-.projects_branding {
-  height: 911px;
-  width: 80%;
-  margin-top: 140px;
-  padding-left: 40px; }
-  .projects_branding .branding_calzados {
+@media (max-width: 1024px) {
+  .sectionAll {
     display: flex;
-    align-items: center; }
-    .projects_branding .branding_calzados .branding_text {
-      padding-left: 30px; }
-      .projects_branding .branding_calzados .branding_text p {
-        font-family: 'Montserrat', sans-serif;
-        margin-top: 10px;
-        font-size: 18px; }
-      .projects_branding .branding_calzados .branding_text .branding_title {
-        font-family: 'DM Serif Display', serif;
-        font-size: 30px;
-        font-weight: 600; }
-      .projects_branding .branding_calzados .branding_text .list_Projects {
-        padding-left: 20px; }
-      .projects_branding .branding_calzados .branding_text .item_projects {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 18px; }
-  .projects_branding .branding_elza {
-    display: flex;
-    align-items: center;
-    margin-top: 20px; }
-    .projects_branding .branding_elza .branding_text {
-      padding-left: 30px; }
-      .projects_branding .branding_elza .branding_text p {
-        font-family: 'Montserrat', sans-serif;
-        margin-top: 10px;
-        font-size: 18px; }
-      .projects_branding .branding_elza .branding_text .branding_title {
-        font-family: 'DM Serif Display', serif;
-        font-size: 30px;
-        font-weight: 600; }
-      .projects_branding .branding_elza .branding_text .list_Projects {
-        padding-left: 20px; }
-      .projects_branding .branding_elza .branding_text .item_projects {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 18px; }
+    flex-flow: column;
+    text-align: center; }
+  .sidebarServicios {
+    width: 100vw;
+    height: 8vh;
+    margin: 80px 0;
+    background: #E8B4B7; }
+    .sidebarServicios .sidebar_List {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      justify-content: space-between; }
+    .sidebarServicios .linkSidebar {
+      width: 33%;
+      height: 10vh;
+      margin-top: 20px;
+      text-align: center;
+      padding: 1.3vw;
+      margin: 0;
+      font-size: 1.5vw; } }
 
-.projects_digital {
-  height: 911px;
-  width: 65%;
-  margin-top: 150px;
-  padding-left: 40px; }
-  .projects_digital .digital_mesa {
+@media (min-width: 1024px) {
+  .sectionAll {
     display: flex;
-    align-items: center; }
-    .projects_digital .digital_mesa .digital_text {
-      padding-left: 30px; }
-      .projects_digital .digital_mesa .digital_text p {
-        font-family: 'Montserrat', sans-serif;
-        margin-top: 10px;
-        font-size: 18px; }
-      .projects_digital .digital_mesa .digital_text .digital_title {
-        font-family: 'DM Serif Display', serif;
-        font-size: 30px;
-        font-weight: 600; }
-      .projects_digital .digital_mesa .digital_text .list_Projects {
-        padding-left: 20px; }
-      .projects_digital .digital_mesa .digital_text .item_projects {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 18px; }
-  .projects_digital .digital_exessure {
+    height: 911px; }
+  .sidebarServicios {
+    width: 16vw;
+    height: 911px;
+    background: #E8B4B7;
     display: flex;
-    align-items: center;
-    margin-top: 20px; }
-    .projects_digital .digital_exessure .branding_text {
-      padding-left: 30px; }
-      .projects_digital .digital_exessure .branding_text p {
-        font-family: 'Montserrat', sans-serif;
-        margin-top: 10px;
-        font-size: 18px; }
-      .projects_digital .digital_exessure .branding_text .branding_title {
-        font-family: 'DM Serif Display', serif;
-        font-size: 30px;
-        font-weight: 600; }
-      .projects_digital .digital_exessure .branding_text .list_Projects {
-        padding-left: 20px; }
-      .projects_digital .digital_exessure .branding_text .item_projects {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 18px; }
-
-.projects_comunicacion {
-  height: 900px;
-  width: 90%;
-  margin-top: 90px;
-  padding-left: 40px; }
-  .projects_comunicacion .comunicacion_qw {
-    display: flex;
-    align-items: center; }
-    .projects_comunicacion .comunicacion_qw .img_com {
-      width: 260px;
-      height: 260px; }
-    .projects_comunicacion .comunicacion_qw .branding_text {
-      padding-left: 30px; }
-      .projects_comunicacion .comunicacion_qw .branding_text p {
-        font-family: 'Montserrat', sans-serif;
-        margin-top: 5px;
-        font-size: 16px; }
-      .projects_comunicacion .comunicacion_qw .branding_text .branding_title {
-        font-family: 'DM Serif Display', serif;
-        font-size: 26px;
-        font-weight: 600; }
-      .projects_comunicacion .comunicacion_qw .branding_text .list_Projects {
-        padding-left: 20px; }
-      .projects_comunicacion .comunicacion_qw .branding_text .item_projects {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 16px; }
-  .projects_comunicacion .comunicacion_vivero {
-    display: flex;
-    align-items: center;
-    margin-top: 10px; }
-    .projects_comunicacion .comunicacion_vivero .img_com {
-      width: 260px;
-      height: 260px; }
-    .projects_comunicacion .comunicacion_vivero .branding_text {
-      padding-left: 30px; }
-      .projects_comunicacion .comunicacion_vivero .branding_text p {
-        font-family: 'Montserrat', sans-serif;
-        margin-top: 10px;
-        font-size: 16px; }
-      .projects_comunicacion .comunicacion_vivero .branding_text .branding_title {
-        font-family: 'DM Serif Display', serif;
-        font-size: 26px;
-        font-weight: 600; }
-      .projects_comunicacion .comunicacion_vivero .branding_text .list_Projects {
-        padding-left: 20px; }
-      .projects_comunicacion .comunicacion_vivero .branding_text .item_projects {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 16px; }
-  .projects_comunicacion .comunicacion_candy {
-    display: flex;
-    align-items: center;
-    margin-top: 10px; }
-    .projects_comunicacion .comunicacion_candy .img_com {
-      width: 260px;
-      height: 260px; }
-    .projects_comunicacion .comunicacion_candy .branding_text {
-      padding-left: 30px; }
-      .projects_comunicacion .comunicacion_candy .branding_text p {
-        font-family: 'Montserrat', sans-serif;
-        margin-top: 10px;
-        font-size: 16px; }
-      .projects_comunicacion .comunicacion_candy .branding_text .branding_title {
-        font-family: 'DM Serif Display', serif;
-        font-size: 26px;
-        font-weight: 600; }
-      .projects_comunicacion .comunicacion_candy .branding_text .list_Projects {
-        padding-left: 20px; }
-      .projects_comunicacion .comunicacion_candy .branding_text .item_projects {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 16px; }
+    flex-direction: column;
+    justify-content: center; }
+  .sidebar_List {
+    list-style: none; }
+  .linkSidebar {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1vw;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 80px 0;
+    padding-left: 40px;
+    cursor: pointer;
+    height: 67px;
+    width: 16vw;
+    line-height: 67px; }
+    .linkSidebar:hover {
+      background: #FFFFFF;
+      color: #EC5A61;
+      font-weight: bold; }
+  .sectBranding {
+    display: block; }
+  .sectDigital {
+    display: none; }
+  .sectComunicacion {
+    display: none; }
+  .projects_branding {
+    height: 911px;
+    width: 80%;
+    margin-top: 140px;
+    padding-left: 2vw; }
+    .projects_branding .branding_calzados {
+      display: flex;
+      align-items: center; }
+      .projects_branding .branding_calzados .branding_text {
+        padding-left: 1.5vw; }
+        .projects_branding .branding_calzados .branding_text p {
+          font-family: 'Montserrat', sans-serif;
+          margin-top: 10px;
+          font-size: 1vw; }
+        .projects_branding .branding_calzados .branding_text .branding_title {
+          font-family: 'DM Serif Display', serif;
+          font-size: 1.5vw;
+          font-weight: 600; }
+        .projects_branding .branding_calzados .branding_text .list_Projects {
+          padding-left: 1vw; }
+        .projects_branding .branding_calzados .branding_text .item_projects {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 1vw; }
+    .projects_branding .branding_elza {
+      display: flex;
+      align-items: center;
+      margin-top: 2vh; }
+      .projects_branding .branding_elza .branding_text {
+        padding-left: 1.5vw; }
+        .projects_branding .branding_elza .branding_text p {
+          font-family: 'Montserrat', sans-serif;
+          margin-top: 10px;
+          font-size: 1vw; }
+        .projects_branding .branding_elza .branding_text .branding_title {
+          font-family: 'DM Serif Display', serif;
+          font-size: 1.5vw;
+          font-weight: 600; }
+        .projects_branding .branding_elza .branding_text .list_Projects {
+          padding-left: 1vw; }
+        .projects_branding .branding_elza .branding_text .item_projects {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 1vw; }
+  .projects_digital {
+    height: 911px;
+    width: 65%;
+    margin-top: 140px;
+    padding-left: 2vw; }
+    .projects_digital .digital_mesa {
+      display: flex;
+      align-items: center; }
+      .projects_digital .digital_mesa .digital_text {
+        padding-left: 1.5vw; }
+        .projects_digital .digital_mesa .digital_text p {
+          font-family: 'Montserrat', sans-serif;
+          margin-top: 10px;
+          font-size: 1vw; }
+        .projects_digital .digital_mesa .digital_text .digital_title {
+          font-family: 'DM Serif Display', serif;
+          font-size: 1.5vw;
+          font-weight: 600; }
+        .projects_digital .digital_mesa .digital_text .list_Projects {
+          padding-left: 1vw; }
+        .projects_digital .digital_mesa .digital_text .item_projects {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 1vw; }
+    .projects_digital .digital_exessure {
+      display: flex;
+      align-items: center;
+      margin-top: 20px; }
+      .projects_digital .digital_exessure .branding_text {
+        padding-left: 1.5vw; }
+        .projects_digital .digital_exessure .branding_text p {
+          font-family: 'Montserrat', sans-serif;
+          margin-top: 10px;
+          font-size: 1vw; }
+        .projects_digital .digital_exessure .branding_text .branding_title {
+          font-family: 'DM Serif Display', serif;
+          font-size: 1.5vw;
+          font-weight: 600; }
+        .projects_digital .digital_exessure .branding_text .list_Projects {
+          padding-left: 1vw; }
+        .projects_digital .digital_exessure .branding_text .item_projects {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 1vw; }
+  .projects_comunicacion {
+    height: 93vh;
+    width: 90%;
+    margin-top: 90px;
+    padding-left: 2vw; }
+    .projects_comunicacion .comunicacion_qw {
+      display: flex;
+      align-items: center; }
+      .projects_comunicacion .comunicacion_qw .img_com {
+        width: 260px; }
+      .projects_comunicacion .comunicacion_qw .branding_text {
+        padding-left: 1.5vw; }
+        .projects_comunicacion .comunicacion_qw .branding_text p {
+          font-family: 'Montserrat', sans-serif;
+          margin-top: 5px;
+          font-size: 0.9vw; }
+        .projects_comunicacion .comunicacion_qw .branding_text .branding_title {
+          font-family: 'DM Serif Display', serif;
+          font-size: 1.35vw;
+          font-weight: 600; }
+        .projects_comunicacion .comunicacion_qw .branding_text .list_Projects {
+          padding-left: 1vw; }
+        .projects_comunicacion .comunicacion_qw .branding_text .item_projects {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.9vw; }
+    .projects_comunicacion .comunicacion_vivero {
+      display: flex;
+      align-items: center;
+      margin-top: 10px; }
+      .projects_comunicacion .comunicacion_vivero .img_com {
+        width: 260px; }
+      .projects_comunicacion .comunicacion_vivero .branding_text {
+        padding-left: 1.5vw; }
+        .projects_comunicacion .comunicacion_vivero .branding_text p {
+          font-family: 'Montserrat', sans-serif;
+          margin-top: 5px;
+          font-size: 0.9vw; }
+        .projects_comunicacion .comunicacion_vivero .branding_text .branding_title {
+          font-family: 'DM Serif Display', serif;
+          font-size: 1.35vw;
+          font-weight: 600; }
+        .projects_comunicacion .comunicacion_vivero .branding_text .list_Projects {
+          padding-left: 1vw; }
+        .projects_comunicacion .comunicacion_vivero .branding_text .item_projects {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.9vw; }
+    .projects_comunicacion .comunicacion_candy {
+      display: flex;
+      align-items: center;
+      margin-top: 10px; }
+      .projects_comunicacion .comunicacion_candy .img_com {
+        width: 260px; }
+      .projects_comunicacion .comunicacion_candy .branding_text {
+        padding-left: 1.5vw; }
+        .projects_comunicacion .comunicacion_candy .branding_text p {
+          font-family: 'Montserrat', sans-serif;
+          margin-top: 5px;
+          font-size: 0.9vw; }
+        .projects_comunicacion .comunicacion_candy .branding_text .branding_title {
+          font-family: 'DM Serif Display', serif;
+          font-size: 1.35vw;
+          font-weight: 600; }
+        .projects_comunicacion .comunicacion_candy .branding_text .list_Projects {
+          padding-left: 1vw; }
+        .projects_comunicacion .comunicacion_candy .branding_text .item_projects {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.9vw; } }
