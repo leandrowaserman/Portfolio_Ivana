@@ -10,12 +10,6 @@ footer{
     height: 180px;
     width: 100%;
 
-    @media (max-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        
-    }
-
     .contacto_footer{
         grid-area: links;
         text-align: center;
@@ -80,8 +74,16 @@ footer{
             margin-top: 0;
         }
     }
+    .btn_responsive{
+        display: none;
+    }
     .design_footer{
         grid-area: designers;
+
+        .title_footer2{
+            display: none;
+        }
+
         h5{
             font-family: 'Montserrat', sans-serif;
             font-size: 22px;
@@ -112,4 +114,103 @@ footer{
         }
     }
 
+}
+
+@media (max-width: 768px) {
+    footer{
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'logo'
+                             'btn'
+                             'links'
+                             'designers';
+        
+        
+        .logo_footer{
+            margin-top: 20px;
+            height: 97px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+    
+            .titulo_logo{
+                font-size: 22px;
+                margin-left: 10px;
+                width: 200px;
+                
+            }
+
+            .logo_svg{
+                width: 90px;
+                height: 90px;
+            }
+        }
+        .btn_responsive{
+            display: block;
+            background: #EC5A61;
+            width: 608px;
+            height: 1px;
+            border: 1px solid #EC5A61;
+            margin-top: 10px;
+        }
+        .contacto_footer{
+            margin-top: 50px;
+            
+    
+            .buttons{
+                margin-top: 10px;
+            }
+            .mail_footer{
+                margin-top: 10px;
+            }
+        }
+        .design_footer{
+            background: #F39498;
+            padding: 15px;
+            width: 100%;
+            margin-top: 50px;
+
+            .title_footer1{
+                display: none;
+            }
+
+            .title_footer2{
+                display: block;
+            }
+            
+            h5{
+                font-size: 4vw;
+                font-weight: bold;
+                text-align: left;
+                margin-left: 10px;
+            }
+
+            .design_list_resp{
+                display: flex;
+                justify-content: space-between;
+                
+
+                .design_resp1{
+                    padding: 20px 0;
+                    width: 300px;
+
+                    p{
+                        margin-top: 15px;
+                    } 
+                }
+
+                .design_resp2{
+                    padding: 20px;
+                    width: 300px;
+
+                    p{
+                        margin-top: 15px;
+                    }
+                }           
+            }   
+        }
+    }
 }
