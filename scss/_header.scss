@@ -126,6 +126,7 @@
             @media (max-width: 768px) {
                 .header{
                     height: 70px;
+
                 }
 
                     .logo_svg{ 
@@ -133,10 +134,17 @@
                     }
 
                     .logo{
-                        
                         line-height: 70px;
+                        margin-left: 13vw;
+                        padding-right: 20px;
+                        .titulo_logo{
+                            font-size: 3vw;
+                        }
                     }
-
+                    .nav_responsive{
+                        display: flex;
+                        flex-flow: row nowrap;
+                    }
                     .navbarList{
                         flex-direction: column;
                         align-items: center;
