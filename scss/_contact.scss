@@ -50,7 +50,7 @@
                 &::placeholder{
                     font-family: 'Montserrat', sans-serif;
                     text-align: left;
-                    font-size: 3vw;
+                    font-size: 2.8vw;
                     font-weight: bolder;
                     color: black;
                 }
@@ -67,7 +67,7 @@
                 &::placeholder{
                     font-family: 'Montserrat', sans-serif;
                     text-align: left;
-                    font-size: 3vw;
+                    font-size: 2.8vw;
                     font-weight: bolder;
                     color: black;
                     
@@ -77,16 +77,15 @@
         .form_submit{
             background: #EC5A61;
             border-radius: 50px;
-    
             margin-bottom: 10px;
-            width: 40vw;
-            height: 6vh;
+            width: 30vw;
+            height: 12vh;
             border: none;
             color: white;
             font-family: 'Roboto', sans-serif;
             text-align: center;
             font-size: 18px;
-            font-weight: 400;
+            font-weight: 600;
             transition: 0.2s;
             &:hover{
                 background-color: #c24e54;
@@ -104,133 +103,135 @@
 
 }
 @media only screen and (min-width:1024px){
-    .form__floatLeft{
-        float: left;
-        margin-left: 180px;
-        position: relative;
-        width: 30vw;
-    }
-    .form__floatRight{
-        float: right;
-        position: relative;
-        width: 50vw;
-        .contactimg{
-            width: 30vw;
-            margin-left: 5vw;
-            margin-top: 5.15vh;
-        }
-    }
-    .contactame{
-        font-family: 'DM Serif Display', serif;
-        text-align: center;
-        font-size:  3.125vw;
-        width: 30vw;
-        font-weight: 400;
-        height: 12vh
-    }
-    .pre-title{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 20px;
-        font-weight: 400;
-        width: 30vw;
-        margin-top: 43px;
-        text-align: center;
-        line-height: 31,7px;
-    }
-    .form{
-        width: 592px;
-    }
-    
-    
-    .formGrid{
-        width: 32vw;
-        display: grid;
-        grid-template-columns: 12vw 18vw;
-        grid-template-rows: 5.8vh 24.5vh;
-        grid-template-areas: "name email" "message message";
-        grid-column-gap: 1vw;
-        grid-row-gap: 2vh;
-    }
-    .form_name{
-        grid-area: name;
-        width: 12vw;
-        height: 5.8vh;
-        background-color: #DCD0C2;
-        border: none;
-        padding-left: 0.5vw;
-        font-family: 'Roboto', sans-serif;
-        letter-spacing: 1px;
-        color: black;
-        font-weight: bolder;
-        &::placeholder{
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-            font-size: 0.93vw;
-            font-weight: bolder;
-            color: black;
-        }
-    }
-    .form_email{
-        width: 18vw;
-        height: 5.8vh;
-        background-color: #DCD0C2;
-        border: none;
-        padding-left: 10px;
-        font-family: 'Roboto', sans-serif;
-        letter-spacing: 1px;
-        color: black;
-        font-weight: bolder;
-        &::placeholder{
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-            font-size: 0.93vw;
-            font-weight: bolder;
-            color: black;
-        }
-    }
-    .form_message{
-        grid-area: message;
-        width: 31vw;
-        height: 24.5vh;
-        background-color: #DCD0C2;
-        border: none;
-        padding: 10px;
-        font-family: 'Roboto', sans-serif;
-        letter-spacing: 1px;
-        color: black;
-        font-weight: bolder;
-        &::placeholder{
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-            font-size: 0.93vw;
-            font-weight: bolder;
-            color: black;
-            
-        }
-    }
-    .form_submit{
-        background: #EC5A61;
-        border-radius: 50px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        width: 11vw;
-        height: 4.65vh;
-        border: none;
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        text-align: center;
-        font-size: 18px;
-        font-weight: 400;
-        transition: 0.2s;
-        &:hover{
-            background-color: #c24e54;
-        }
-    }
     .contact{
-        position: relative;
+        height: 100%;
         width: 100%;
-        margin-top: 100px;
+        
+        .form__floatLeft{
+            float: left;
+            margin-left: 180px;
+            position: relative;
+            width: 30vw;
+        }
+        .form__floatRight{
+            float: right;
+            position: relative;
+            width: 50vw;
+            .contactimg{
+                width: 30vw;
+                margin-left: 5vw;
+                margin-top: 5.15vh;
+            }
+        }
+        .contactame{
+            font-family: 'DM Serif Display', serif;
+            text-align: center;
+            font-size:  3.125vw;
+            width: 30vw;
+            font-weight: 400;
+            height: 12vh
+        }
+        .pre-title{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            width: 30vw;
+            margin-top: 43px;
+            text-align: center;
+            line-height: 31,7px;
+        }
+        .form{
+            width: 592px;
+            height: 100%;
+        
+        .formGrid{
+            width: 32vw;
+            display: grid;
+            grid-template-columns: 12vw 18vw;
+            grid-template-rows: 5.8vh 24.5vh;
+            grid-template-areas: "name email" "message message";
+            grid-column-gap: 1vw;
+            grid-row-gap: 2vh;
+        }
+        .form_name{
+            grid-area: name;
+            width: 12vw;
+            height: 5.8vh;
+            background-color: #DCD0C2;
+            border: none;
+            padding-left: 0.5vw;
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 1px;
+            color: black;
+            font-weight: bolder;
+            &::placeholder{
+                font-family: 'Montserrat', sans-serif;
+                text-align: center;
+                font-size: 0.93vw;
+                font-weight: bolder;
+                color: black;
+            }
+        }
+        .form_email{
+            width: 18vw;
+            height: 5.8vh;
+            background-color: #DCD0C2;
+            border: none;
+            padding-left: 10px;
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 1px;
+            color: black;
+            font-weight: bolder;
+            &::placeholder{
+                font-family: 'Montserrat', sans-serif;
+                text-align: center;
+                font-size: 0.93vw;
+                font-weight: bolder;
+                color: black;
+            }
+        }
+        .form_message{
+            grid-area: message;
+            width: 31vw;
+            height: 24.5vh;
+            background-color: #DCD0C2;
+            border: none;
+            padding: 10px;
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 1px;
+            color: black;
+            font-weight: bolder;
+            &::placeholder{
+                font-family: 'Montserrat', sans-serif;
+                text-align: center;
+                font-size: 0.93vw;
+                font-weight: bolder;
+                color: black;
+                
+            }
+        }
+        .form_submit{
+            background: #EC5A61;
+            border-radius: 50px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 11vw;
+            height: 4.65vh;
+            border: none;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 400;
+            transition: 0.2s;
+            &:hover{
+                background-color: #c24e54;
+            }
+        }
+        
     }
+}
+   
     .footer_form{
         position: absolute;
         bottom: 0;

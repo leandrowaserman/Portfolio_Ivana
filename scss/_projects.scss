@@ -4,6 +4,7 @@
         flex-flow: column;
         width: 100vw;
         justify-content: center;
+        
     }
     .sectBranding{
         display: block;
@@ -15,6 +16,10 @@
 
     .sectComunicacion{
         display: none;
+    }
+
+    .sidebar_List{
+        list-style: none;
     }
 
     .sidebarServicios{
@@ -36,6 +41,7 @@
             text-align: center;
             padding: 1.3vw;
             font-size: 2.3vw;
+            line-height: 6vh;
         }
     }
     .projects_branding{
@@ -471,6 +477,7 @@
     
                 p{
                     font-family: 'Montserrat', sans-serif; 
+                    text-align: justify;
                     margin-top: 10px; 
                     font-size: 1vw;
                 }
@@ -510,7 +517,9 @@
                 padding-left: 1.5vw;
     
                 p{
-                    font-family: 'Montserrat', sans-serif; 
+                    font-family: 'Montserrat', sans-serif;
+                    width: 140%;
+                    text-align: justify; 
                     margin-top: 10px; 
                     font-size: 1vw;
                 }
@@ -544,7 +553,9 @@
                 padding-left: 1.5vw;
     
                 p{
-                    font-family: 'Montserrat', sans-serif; 
+                    font-family: 'Montserrat', sans-serif;
+                    width: 140%;
+                    text-align: justify; 
                     margin-top: 10px; 
                     font-size: 1vw;
                 }
@@ -588,7 +599,9 @@
                 padding-left: 1.5vw;
     
                 p{
-                    font-family: 'Montserrat', sans-serif; 
+                    font-family: 'Montserrat', sans-serif;
+                    width: 90%;
+                    text-align: justify; 
                     margin-top: 5px; 
                     font-size: 0.9vw;
                 }
@@ -626,7 +639,9 @@
                 padding-left: 1.5vw;
     
                 p{
-                    font-family: 'Montserrat', sans-serif; 
+                    font-family: 'Montserrat', sans-serif;
+                    width: 90%;
+                    text-align: justify;  
                     margin-top: 5px; 
                     font-size: 0.9vw;
                 }
@@ -663,7 +678,9 @@
                 padding-left: 1.5vw;
     
                 p{
-                    font-family: 'Montserrat', sans-serif; 
+                    font-family: 'Montserrat', sans-serif;
+                    width: 90%;
+                    text-align: justify;  
                     margin-top: 5px; 
                     font-size: 0.9vw;
                 }

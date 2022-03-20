@@ -1,6 +1,5 @@
 footer{
     background-color: #E8B4B7;
-    position:static;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -116,11 +115,12 @@ footer{
 
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1115px) {
     footer{
+        width: 100%;
         .logo_footer{
             h1{
-                font-size: 20px;
+                font-size: 22px;
             }
         }
     }
@@ -129,7 +129,6 @@ footer{
 @media (max-width: 768px) {
     footer{
         height: 100%;
-        width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: 'logo'

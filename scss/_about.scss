@@ -265,7 +265,7 @@
         .description_about{
             background-color: #E8B4B7;
             width: 45vw; 
-            height: 35.5vh;  
+            height: 36vh;  
             padding-top:16px;
             padding-bottom: 36px;
             padding-left: 16px;
@@ -283,7 +283,7 @@
                 font-size: 36px;
                 font-weight: 400;
                 line-height: 49,36px;
-                margin-bottom: 34px;
+                margin-bottom: 5px;
             }
         }
         .img_description{
@@ -293,6 +293,7 @@
             z-index: -1;
             img{
                 width: 22vw;
+                
             }
         }
     }
