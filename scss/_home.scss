@@ -18,25 +18,39 @@
             flex-flow: column nowrap;
             justify-content: flex-start;
 
+            @media (max-width: 1024px) {
+                width: 40vw;              
+            }
+
             .hola{
                 font-family: 'DM Serif Display', serif;
                 font-size: 72px;
                 font-weight: 400;
+
+                @media (max-width: 1024px) {
+                    font-size: 52px;
+                }
             }
         
             .hola2{
                 font-family: 'DM Serif Display', serif;
                 font-weight: 400;
                 font-size: 28px;
+
+                @media (max-width: 1024px) {
+                    font-size: 22px;
+                }
             }
         
             p{
                 font-family: 'Montserrat', sans-serif;
                 font-size: 18px;
                 font-weight: 600;
-                text-align: justify;
                 line-height: 21px;
                 margin-top: 8px;
+                @media (max-width:1024px) {
+                    font-size: 16px;
+                }
             }
         
             .btnSection1{
@@ -57,12 +71,21 @@
                     text-decoration: none;
                     
                 }
+
+                @media (max-width: 1024px) {
+                    margin-left: 20%;    
+                }
             }
         }
 
         .imgHome{
-            width: 620px;
-            height: 640px;
+            width: 656px;
+            height: 656px;
+
+            @media (max-width: 1024px) {
+                width: 456px;
+                height: 566px;
+            }
         }
     }
 
@@ -95,6 +118,7 @@
                     font-family: 'Montserrat', sans-serif;
                     font-size: 14px;
                     font-weight: 500;
+
                 }
 
                 img{
@@ -116,6 +140,10 @@
                     font-size: 16px;
                     font-family: 'Montserrat', sans-serif;
                     font-weight: 600;
+
+                    @media (max-width: 1024px) {
+                        font-size: 12px;;    
+                    }
                 }
                 &:hover{
                     box-shadow: rgba(23, 23, 26, 0.2) 0px 7px 29px 0px;
@@ -197,25 +225,6 @@
     }
 }
 
-// @media (max-width: 1110px) {
-//     .sectionProyectos{
-//         .proyectos{
-//             .proy1_6{
-//                 width: 1000px;
-//                 height: 243px;
-//             }
-
-//             .proy2_5{
-//                 width: 220px;
-//                 height: 243px;
-//             }
-//         }
-        
-
-//     }
-// }
-
-
 
 @media (max-width: 768px){
     .main_top{
@@ -223,13 +232,22 @@
   
 
         .section1{
-            margin-top: 0;
+            margin-top: 20px;
             margin-bottom: 0;
+
+            .sectionHola{
+                width: 100vw;
+                
+                .btnSection1{
+                    margin-left: 40%;
+                }
+            }
+    
+            .imgHome{
+                display: none;
+            }
         }
 
-        .imgHome{
-            display: none;
-        }
 
         .sectionAyudarte{
             margin-bottom: 50px;

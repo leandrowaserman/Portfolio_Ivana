@@ -66,7 +66,7 @@
             }
 
             @media (max-width: 1000px) {
-                margin-left: 12vw;
+                margin-left: 10vw;
             }
 
             @media (max-width: 860px) {
@@ -79,12 +79,8 @@
 
             .nav_item {
                 text-transform: uppercase;
-                width: max-content;
-                line-height: 80px;
                 
-                @media (min-width: 768px) {
-                    font-size: 13px;
-                }
+                line-height: 80px;
                 
                 .nav_link {
                     text-decoration: none;
@@ -93,9 +89,19 @@
                     font-weight: 600;
                     margin: 0 10px;
 
-                        @media (min-width: 768px) {
+                        @media (max-width: 1100px) {
                             font-size: 14px;
-                            margin: 0 8px;
+                            margin: 0 4px;
+                        }
+
+                        @media (max-width: 1000px) {
+                            font-size: 12px;
+                            margin: 0 2px;
+                        }
+
+                        @media (max-width: 900px) {
+                            font-size: 12px;
+                            margin: 0;
                         }
                 }
                 
