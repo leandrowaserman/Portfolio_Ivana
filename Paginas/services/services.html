@@ -13,9 +13,10 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <!-- Style -->
-    <link rel="stylesheet" href="../../scss/styles.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="icon" href="../../img/Component 1.svg">
 </head>
-<body onload="checkStatus()">
+<body onload="checkStatus(); checkLanguage()">
     <header class="header spanish">
         <nav class="navbar">
             <div class="nav_responsive">
@@ -63,14 +64,14 @@
                                 <li class="item_servicios">En caso de no contar con logo: Logotipo, isotipo, imagotipo, isologo.</li>
                                 <li class="item_servicios">Rediseño de logo e identidad corporativa.</li>
                             </ul>
-                            <button class="botonservicios">VER PROYECTOS</button>
+                            <button class="botonservicios boton_branding"><a href="../projects/projects.html">VER PROYECTOS</a></button>
                         </div>
                         <div class="serviciosBox">
                             <div class="imagenBox">
                                 <img class="imagen_Servicios" src="../../img/img-services.png" alt="imagen servicios">
                             </div>
                             <div class="back_red"></div>
-                            <button class="botonservicios_resp">VER PROYECTOS</button>
+                            <button class="botonservicios_resp boton_branding"><a href="../projects/projects.html">VER PROYECTOS</a></button>
                         </div>
                     </div>
             </section>
@@ -90,14 +91,14 @@
                             <li class="item_servicios">Pruebas de usabilidad, experiencia de usuario y recomendaciones.</li>
                             <li class="item_servicios">Creación de sistemas de diseño y manual de estilo.</li>
                         </ul>
-                        <button class="botonservicios">VER PROYECTOS</button>
+                        <button class="botonservicios boton_digital"><a href="../projects/projects.html">VER PROYECTOS</a></button>
                     </div>
                     <div class="serviciosBox">
                         <div class="imagenBox">
                             <img class="imagen_Servicios" src="../../img/img-serv_digital.png" alt="">
                         </div>
                         <div class="back_red"></div>
-                        <button class="botonservicios_resp">VER PROYECTOS</button>
+                        <button class="botonservicios_resp boton_digital"> <a href="../projects/projects.html">VER PROYECTOS</a></button>
                     </div>
                 </div>
             </section>
@@ -118,14 +119,14 @@
                             <li class="item_servicios">Pautas publicitarias.</li>
                             <li class="item_servicios">Diseño de contenido digital.</li>
                         </ul>
-                        <button class="botonservicios">VER PROYECTOS</button>
+                        <button class="botonservicios boton_comunicacion"><a href="../projects/projects.html">VER PROYECTOS</a></button>
                     </div>
                     <div class="serviciosBox3">
                         <div class="imagenBox">
                             <img class="imagen_Servicios" src="../../img/img-serv_com.png" alt="">
                         </div>
                         <div class="back_red"></div>
-                        <button class="botonservicios_resp">VER PROYECTOS</button>
+                        <button class="botonservicios_resp boton_comunicacion"><a href="../projects/projects.html">VER PROYECTOS</a></button>
                     </div>
                 </div>
             </section>
@@ -168,24 +169,23 @@
             <ul class="design_list_resp">
                 <div class="design_resp1">
                     <li>
-                        <p><a href=""><i class="bi bi-linkedin"></i></a>Julieta Milito</p>
-    
+                        <p><a href="https://www.linkedin.com/in/julieta-milito"><i class="bi bi-linkedin"></i></a>Julieta Milito</p>
                     </li>
                     <li>
-                        <p><a href=""><i class="bi bi-linkedin"></i></a>Brenda Zaya</p>
+                        <p><a href="https://www.linkedin.com/in/brenda-zaya"><i class="bi bi-linkedin"></i></a>Brenda Zaya</p>
                     </li>
                 </div>
                 <div class="design_resp2">
                     <li>
-                        <p><a href=""><i class="bi bi-linkedin"></i></a>Leandro Waserman</p>
+                        <p><a href="https://www.linkedin.com/in/leandrowaserman/"><i class="bi bi-linkedin"></i></a>Leandro Waserman</p>
                     </li>
                     <li>
-                        <p><a href=""><i class="bi bi-linkedin"></i></a>Germán Benavides</p>
+                        <p><a href="https://www.linkedin.com/in/german-benavides-leon/"><i class="bi bi-linkedin"></i></a>Germán Benavides</p>
                     </li>
                 </div>
             </ul>
         </section>
-    </footer> 
+    </footer>
     <!-- INGLES -->
     <header class="header english">
         <nav class="navbar">
@@ -234,14 +234,14 @@
                                 <li class="item_servicios">In case of not having a logo: Logotype, isotype, imagotype, isologist.</li>
                                 <li class="item_servicios">Corporate identity and logo redesign.</li>
                             </ul>
-                            <button class="botonservicios">SEE PROJECTS</button>
+                            <button class="botonservicios boton_branding_ing"><a href="../projects/projects.html">SEE PROJECTS</a></button>
                         </div>
                         <div class="serviciosBox">
                             <div class="imagenBox">
                                 <img class="imagen_Servicios" src="../../img/img-services.png" alt="imagen servicios">
                             </div>
                             <div class="back_red"></div>
-                            <button class="botonservicios_resp">VER PROYECTOS</button>
+                            <button class="botonservicios_resp boton_branding_ing"><a href="../projects/projects.html">SEE PROJECTS</a></button>
                         </div>
                     </div>
             </section>
@@ -261,14 +261,14 @@
                             <li class="item_servicios">Tests of usability, user experience and recomendations.</li>
                             <li class="item_servicios">Creation of design sistems and style manual.</li>
                         </ul>
-                        <button class="botonservicios">SEE PROJECTS</button>
+                        <button class="botonservicios boton_digital_ing"><a href="../projects/projects.html">SEE PROJECTS</a></button>
                     </div>
                     <div class="serviciosBox">
                         <div class="imagenBox">
                             <img class="imagen_Servicios" src="../../img/img-serv_digital.png" alt="">
                         </div>
                         <div class="back_red"></div>
-                        <button class="botonservicios_resp">VER PROYECTOS</button>
+                        <button class="botonservicios_resp boton_digital_ing"><a href="../projects/projects.html">SEE PROJECTS</a></button>
                     </div>
                 </div>
             </section>
@@ -289,14 +289,14 @@
                             <li class="item_servicios">Advertising campaigns.</li>
                             <li class="item_servicios">Design digital content.</li>
                         </ul>
-                        <button class="botonservicios">SEE PROJECTS</button>
+                        <button class="botonservicios boton_comunicacion_ing"><a href="../projects/projects.html">SEE PROJECTS</a></button>
                     </div>
                     <div class="serviciosBox3">
                         <div class="imagenBox">
                             <img class="imagen_Servicios" src="../../img/img-serv_com.png" alt="">
                         </div>
                         <div class="back_red"></div>
-                        <button class="botonservicios_resp">VER PROYECTOS</button>
+                        <button class="botonservicios_resp boton_comunicacion_ing"><a href="../projects/projects.html">SEE PROJECTS</a></button>
                     </div>
                 </div>
             </section>
@@ -339,18 +339,18 @@
             <ul class="design_list_resp">
                 <div class="design_resp1">
                     <li>
-                        <p><a href=""><i class="bi bi-linkedin"></i></a>Julieta Milito</p>
+                        <p><a href="https://www.linkedin.com/in/julieta-milito"><i class="bi bi-linkedin"></i></a>Julieta Milito</p>
                     </li>
                     <li>
-                        <p><a href=""><i class="bi bi-linkedin"></i></a>Brenda Zaya</p>
+                        <p><a href="https://www.linkedin.com/in/brenda-zaya"><i class="bi bi-linkedin"></i></a>Brenda Zaya</p>
                     </li>
                 </div>
                 <div class="design_resp2">
                     <li>
-                        <p><a href=""><i class="bi bi-linkedin"></i></a>Leandro Waserman</p>
+                        <p><a href="https://www.linkedin.com/in/leandrowaserman/"><i class="bi bi-linkedin"></i></a>Leandro Waserman</p>
                     </li>
                     <li>
-                        <p><a href=""><i class="bi bi-linkedin"></i></a>Germán Benavides</p>
+                        <p><a href="https://www.linkedin.com/in/german-benavides-leon/"><i class="bi bi-linkedin"></i></a>Germán Benavides</p>
                     </li>
                 </div>
             </ul>

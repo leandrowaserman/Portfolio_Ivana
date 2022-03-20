@@ -98,7 +98,7 @@
                     border: 2px black solid;
                     border-radius: 50%;
                     top: 0;
-                    transform: translate(-50%, -50%);
+                    transform: translate(-28%, -50%);
                     left: -30px;
                 }
                 &:first-child::after{
@@ -131,7 +131,7 @@
                 height: 81%;
                 width: 4px;
                 background-color: black;
-                left: 1.5%;
+                left: 2.5%;
                 transform: translate(-50%);
             }
         }
@@ -265,8 +265,8 @@
         .description_about{
             background-color: #E8B4B7;
             width: 45vw; 
-            height: 36vh;  
-            padding-top:16px;
+            height: 30vh;
+            padding-top:3vh;
             padding-bottom: 36px;
             padding-left: 16px;
             .text_about{

@@ -6,6 +6,7 @@ const digitalIng = document.querySelector('#digital_ing')
 const comunicacionIng = document.querySelector('#comunicacion_ing')
 
 
+
 function checkStatus(){
     const section1 = document.getElementsByClassName('sectionServicios')
     const section2 = document.getElementsByClassName('sectionServicios2')
@@ -59,4 +60,28 @@ comunicacionIng.addEventListener('mouseover', () => {
 })
 
 
+const botonBrandingEsp = document.querySelector('.boton_branding')
+const botonDigitalEsp = document.querySelector('.boton_digital')
+const botonComunicacionEsp = document.querySelector('.boton_comunicacion')
+const botonBrandingIng = document.querySelector('.boton_branding_ing')
+const botonDigitalIng = document.querySelector('.boton_digital_ing')
+const botonComunicacionIng = document.querySelector('.boton_comunicacion_ing')
 
+botonBrandingEsp.addEventListener('click', () => {
+    localStorage.setItem("projects","branding")
+})
+botonDigitalEsp.addEventListener('click', () => {
+    localStorage.setItem("projects","digital")
+})
+botonComunicacionEsp.addEventListener('click', () => {
+    localStorage.setItem("projects","comunicacion")
+})
+botonBrandingIng.addEventListener('click', () => {
+    localStorage.setItem("projects","branding")
+})
+botonDigitalIng.addEventListener('click', () => {
+    localStorage.setItem("projects","digital")
+})
+botonComunicacionIng.addEventListener('click', () => {
+    localStorage.setItem("projects","comunicacion")
+})

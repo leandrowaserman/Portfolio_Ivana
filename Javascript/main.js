@@ -27,8 +27,6 @@ function checkLanguage(){
 
     }
 }
-window.onload = checkLanguage()
-
 botonEspañol.addEventListener('click', () =>{
     localStorage.setItem("language", 1)
     checkLanguage()

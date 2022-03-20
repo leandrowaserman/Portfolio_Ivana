@@ -108,10 +108,15 @@
                     margin-right: 50%;
                     margin-top: 50px;
                     color: #FFFFFF; 
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
         }
 
         .botonservicios_resp{
             display: none;
+            
         }
         
         .serviciosBox{
@@ -197,7 +202,10 @@
                     margin-left: 10%;
                     margin-right: 50%;
                     margin-top: 50px;
-                    color: #FFFFFF; 
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    } 
         }
 
         .botonservicios_resp{
@@ -282,7 +290,10 @@
                     margin-left: 10%;
                     margin-right: 50%;
                     margin-top: 20px;
-                    color: #FFFFFF; 
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
         }
 
         .botonservicios_resp{
@@ -469,8 +480,11 @@
                     border: none;
                     margin-left: 38vw;
                     font-size: 2.3vw;
-                    color: #FFFFFF;
                     margin-top: 16vw;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
                     @media (max-width: 768px) {
                         width: 190px;
                     }
@@ -523,8 +537,11 @@
                     border: none;
                     font-size: 2.3vw;
                     margin-left: 38%;
-                    color: #FFFFFF;
                     margin-top: 16vw;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
                     @media (max-width: 768px) {
                         width: 190px;
                     }
@@ -579,8 +596,11 @@
                     border: none;
                     margin-left: 38vw;
                     font-size: 2.3vw;
-                    color: #FFFFFF;
                     margin-top: 16vw;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }   
                     @media (max-width: 768px) {
                         width: 190px;
                     }

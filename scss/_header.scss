@@ -11,7 +11,9 @@
     .navbar {
         width: 100%;
         display: flex;
-        
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-around;
         .boton {
             background: #dcd0c2;
             border: none;
@@ -20,12 +22,11 @@
             line-height: 60px;
             display: none;
         }
-
         .logo {
             display: flex;
+            justify-self:flex-start;
             font-family: "Julius Sans One", sans-serif;
             line-height: 80px;
-
             h1{
                 font-size: 20px;
 
@@ -55,11 +56,9 @@
         }
 
         .navbarList {
-            width: 100%;
             display: flex;
             align-items: center;
             list-style: none;
-            margin-left: 30vw;
 
             @media (max-width: 1115px) {
                 margin-left: 24vw;
@@ -163,9 +162,8 @@
 
 @media (max-width: 768px) {
     .header {
-        
-        
         .navbar{
+            display: block;
             .boton {
                 display: block;
                 height: 70px;
@@ -202,7 +200,7 @@
                 height: calc(100% - 70px);
                 overflow-y: auto;
                 transition: all 1s;
-                left: -100%;
+                left: -300%;
                 
                 .nav_item {
                     line-height: 70px;
