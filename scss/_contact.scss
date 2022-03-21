@@ -194,9 +194,9 @@
       position: relative;
       width: 100%;
       margin-top: 100px; }
-    .footer_form {
-      position: absolute;
-      bottom: 0; 
-    } 
+      .footer_form{
+        position: fixed;
+        bottom: 0%;
+      }
 }
   

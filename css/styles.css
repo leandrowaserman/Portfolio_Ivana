@@ -783,8 +783,8 @@ footer {
     width: 100%;
     margin-top: 100px; }
   .footer_form {
-    position: absolute;
-    bottom: 0; } }
+    position: fixed;
+    bottom: 0%; } }
 
 .timeline_section {
   margin-bottom: 6%; }
@@ -1001,7 +1001,7 @@ footer {
     .all_description .description_about {
       background-color: #E8B4B7;
       width: 45vw;
-      height: 30vh;
+      height: min-content;
       padding-top: 3vh;
       padding-bottom: 36px;
       padding-left: 16px; }
