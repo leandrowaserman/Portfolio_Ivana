@@ -1,6 +1,5 @@
 .main_top{
     margin-top: 100px;
-    
 
     .section1{
         width: 100%;
@@ -197,10 +196,6 @@
             .proy1_6{
                 width: 656px;
                 height: 283px;
-
-                @media (max-width: 514px) {
-                    
-                }
             }
             .proy2_5{
                 width: 330px;
@@ -230,18 +225,21 @@
 }
 
 
-@media (max-width: 769px){
+@media (max-width: 768px){
     .main_top{
-        margin-top: 10px;
+        margin-top: 0;
   
+
         .section1{
             margin-top: 20px;
             margin-bottom: 0;
 
             .sectionHola{
+                width: 100vw;
                 
                 .btnSection1{
-                    margin-left: 40%;
+                    margin-left: 0;
+                    margin-right: 0;
                 }
             }
     
@@ -249,6 +247,7 @@
                 display: none;
             }
         }
+
 
         .sectionAyudarte{
             margin-bottom: 50px;
@@ -262,10 +261,11 @@
                 height: 365px;
                 margin: 10px 20px;
             }
+        
         }
 
         .sectionProyectos{
-            margin-left: 0;
+            margin: 0;
             padding: 0;
             .proyectos1{
                 display: grid;
@@ -273,55 +273,54 @@
                 grid-template-rows: 1fr 1fr;
                 grid-template-areas: 'digital1 digital1'
                                     'branding1 comunicacion1';
-                grid-column-gap: 1vw;
         
                 .digital1{
                     grid-area: digital1;
-                    width: 100%;
+                    width: 95%;
                     height: 240px;
                 }
         
                 .branding1{
                     margin-top: 10px;
                     grid-area: branding1;
-                    width: 100%;
+                    width: 90%;
                     height: 240px;
                 }
         
                 .comunicacion1{
                     margin-top: 10px;
                     grid-area: comunicacion1;
-                    width: 100%;
+                    width: 90%;
                     height: 240px;
                 }
             }
 
             .proyectos2{
+
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr 1fr;
                 grid-template-areas: 'branding2 branding2'
                                     'digital2 comunicacion2';
-                grid-column-gap: 3vw;
                 
 
                 .digital2{
                     margin-top: 10px;
                     grid-area: digital2;
-                    width: 100%;
+                    width: 90%;
                     height: 240px;
                 }
         
                 .branding2{
                     grid-area: branding2;
-                    width: 100%;
+                    width: 95%;
                     height: 240px;
                 }
         
                 .comunicacion2{
                     margin-top: 10px;
                     grid-area: comunicacion2;
-                    width: 100%;
+                    width: 90%;
                     height: 240px;
                 }
             }

@@ -164,13 +164,13 @@ body {
       align-items: center;
       border-radius: 5px;
       margin-right: 0;
+      height: 100vh;
       margin-left: 40%;
       width: 200px;
       position: fixed;
       top: 70px;
       padding: 0;
       background: #dcd0c2;
-      height: calc(100% - 70px);
       overflow-y: auto;
       transition: all 1s;
       left: -300%; }
@@ -532,7 +532,8 @@ footer {
       .main_top .section1 .sectionHola {
         width: 100vw; }
         .main_top .section1 .sectionHola .btnSection1 {
-          margin-left: 40%; }
+          margin-left: 0;
+          margin-right: 0; }
       .main_top .section1 .imgHome {
         display: none; }
     .main_top .sectionAyudarte {
@@ -544,47 +545,45 @@ footer {
         height: 365px;
         margin: 10px 20px; }
     .main_top .sectionProyectos {
-      margin-left: 0;
+      margin: 0;
       padding: 0; }
       .main_top .sectionProyectos .proyectos1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: 'digital1 digital1' 'branding1 comunicacion1';
-        grid-column-gap: 1vw; }
+        grid-template-areas: 'digital1 digital1' 'branding1 comunicacion1'; }
         .main_top .sectionProyectos .proyectos1 .digital1 {
           grid-area: digital1;
-          width: 100%;
+          width: 95%;
           height: 240px; }
         .main_top .sectionProyectos .proyectos1 .branding1 {
           margin-top: 10px;
           grid-area: branding1;
-          width: 100%;
+          width: 90%;
           height: 240px; }
         .main_top .sectionProyectos .proyectos1 .comunicacion1 {
           margin-top: 10px;
           grid-area: comunicacion1;
-          width: 100%;
+          width: 90%;
           height: 240px; }
       .main_top .sectionProyectos .proyectos2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: 'branding2 branding2' 'digital2 comunicacion2';
-        grid-column-gap: 3vw; }
+        grid-template-areas: 'branding2 branding2' 'digital2 comunicacion2'; }
         .main_top .sectionProyectos .proyectos2 .digital2 {
           margin-top: 10px;
           grid-area: digital2;
-          width: 100%;
+          width: 90%;
           height: 240px; }
         .main_top .sectionProyectos .proyectos2 .branding2 {
           grid-area: branding2;
-          width: 100%;
+          width: 95%;
           height: 240px; }
         .main_top .sectionProyectos .proyectos2 .comunicacion2 {
           margin-top: 10px;
           grid-area: comunicacion2;
-          width: 100%;
+          width: 90%;
           height: 240px; } }
 
 @media only screen and (max-width: 1024px) {
