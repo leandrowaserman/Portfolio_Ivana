@@ -1,5 +1,6 @@
 .main_top{
     margin-top: 100px;
+    
 
     .section1{
         width: 100%;
@@ -196,6 +197,10 @@
             .proy1_6{
                 width: 656px;
                 height: 283px;
+
+                @media (max-width: 514px) {
+                    
+                }
             }
             .proy2_5{
                 width: 330px;
@@ -225,17 +230,15 @@
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 769px){
     .main_top{
-        margin-top: 0;
+        margin-top: 10px;
   
-
         .section1{
             margin-top: 20px;
             margin-bottom: 0;
 
             .sectionHola{
-                width: 100vw;
                 
                 .btnSection1{
                     margin-left: 40%;
@@ -246,7 +249,6 @@
                 display: none;
             }
         }
-
 
         .sectionAyudarte{
             margin-bottom: 50px;
@@ -260,7 +262,6 @@
                 height: 365px;
                 margin: 10px 20px;
             }
-        
         }
 
         .sectionProyectos{
