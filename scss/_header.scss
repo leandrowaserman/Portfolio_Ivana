@@ -2,14 +2,14 @@
   background: #dcd0c2;
   font-size: 18px;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 80px;
   top: 0;
   left: 0;
   z-index: 20;
 
     .navbar {
-        width: 100%;
+        width: 100vw;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
@@ -181,6 +181,7 @@
                 padding-right: 20px;
                 .titulo_logo {
                 font-size: 3vw;
+                width: 40vw;
                 }
             }
             .nav_responsive {
