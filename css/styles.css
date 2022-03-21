@@ -993,7 +993,7 @@ footer {
 
 @media only screen and (min-width: 1024px) {
   .all_description {
-    margin-top: 130px;
+    margin-top: 20px;
     margin-bottom: 5%;
     display: flex;
     flex-flow: row nowrap;
