@@ -264,61 +264,63 @@
         }
 
         .sectionProyectos{
-
+            margin-left: 0;
+            padding: 0;
             .proyectos1{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr 1fr;
                 grid-template-areas: 'digital1 digital1'
                                     'branding1 comunicacion1';
+                grid-column-gap: 1vw;
         
                 .digital1{
                     grid-area: digital1;
-                    width: 660px;
+                    width: 100%;
                     height: 240px;
                 }
         
                 .branding1{
                     margin-top: 10px;
                     grid-area: branding1;
-                    width: 320px;
+                    width: 100%;
                     height: 240px;
                 }
         
                 .comunicacion1{
                     margin-top: 10px;
                     grid-area: comunicacion1;
-                    width: 320px;
+                    width: 100%;
                     height: 240px;
                 }
             }
 
             .proyectos2{
-                margin-top: 40px;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr 1fr;
                 grid-template-areas: 'branding2 branding2'
                                     'digital2 comunicacion2';
+                grid-column-gap: 3vw;
                 
 
                 .digital2{
                     margin-top: 10px;
                     grid-area: digital2;
-                    width: 320px;
+                    width: 100%;
                     height: 240px;
                 }
         
                 .branding2{
                     grid-area: branding2;
-                    width: 660px;
+                    width: 100%;
                     height: 240px;
                 }
         
                 .comunicacion2{
                     margin-top: 10px;
                     grid-area: comunicacion2;
-                    width: 320px;
+                    width: 100%;
                     height: 240px;
                 }
             }
