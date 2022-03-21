@@ -29,13 +29,7 @@
             height: 67px;
             width: 289px;
             line-height: 67px;
-        &:hover{
-            background: #FFFFFF;
 
-            color: #EC5A61;
-            font-weight: bold;
-            
-        }
     }
 
     .sectBranding{
@@ -234,7 +228,17 @@
             margin-top: 250px;
         }
     }
-
+    .sidebar_active{
+        background: #FFFFFF;
+        color: #EC5A61;
+        font-weight: bold;
+        z-index: 3;
+        &:hover{
+            background: #FFFFFF;
+            color: #EC5A61;
+            font-weight: bold;
+        }
+    }
     .sectionServicios3{
         height: 911px;
         width: 80%;

@@ -104,7 +104,10 @@
             justify-content: space-around;
             align-items: center;
             margin: 0 30px;
-
+            .no_link{
+                text-decoration: none;
+                color: black;
+            }
             .brandingHome{
                 background: #E8B4B7;
                 padding: 20px;

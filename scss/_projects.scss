@@ -398,17 +398,14 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 1.4vw;
             font-weight: 600;
-            color: #FFFFFF;
             margin: 20px 0;
             padding-left: 34px;
             cursor: pointer;
                 height: 67px;
                 width: 18vw;
                 line-height: 67px;
-            &:hover{
-                background: #FFFFFF;
-    
-                color: #EC5A61;
+            &:hover{    
+                color: #f08a8f;
                 font-weight: bold;
                 
             }
@@ -514,10 +511,8 @@
             
             .digital_text{
                 padding-left: 1.5vw;
-    
                 p{
                     font-family: 'Montserrat', sans-serif;
-                    width: 140%;
                     text-align: justify; 
                     margin-top: 10px; 
                     font-size: 1vw;
@@ -553,7 +548,6 @@
     
                 p{
                     font-family: 'Montserrat', sans-serif;
-                    width: 140%;
                     text-align: justify; 
                     margin-top: 10px; 
                     font-size: 1vw;

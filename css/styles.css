@@ -229,7 +229,7 @@ footer {
         footer .contacto_footer .buttons ul li i {
           background-color: #EC5A61;
           color: #E8B4B7;
-          border-radius: 50%;
+          border-radius: 100%;
           padding: 10px;
           font-size: 30px;
           transition: 0.2s; }
@@ -440,6 +440,9 @@ footer {
       justify-content: space-around;
       align-items: center;
       margin: 0 30px; }
+      .main_top .sectionAyudarte .section2 .no_link {
+        text-decoration: none;
+        color: black; }
       .main_top .sectionAyudarte .section2 .brandingHome {
         background: #E8B4B7;
         padding: 20px;
@@ -783,8 +786,8 @@ footer {
     width: 100%;
     margin-top: 100px; }
   .footer_form {
-    position: fixed;
-    bottom: 0%; } }
+    position: absolute;
+    bottom: 0; } }
 
 .timeline_section {
   margin-bottom: 6%; }
@@ -1085,10 +1088,6 @@ footer {
   height: 67px;
   width: 289px;
   line-height: 67px; }
-  .linkSidebar:hover {
-    background: #FFFFFF;
-    color: #EC5A61;
-    font-weight: bold; }
 
 .sectBranding {
   display: block; }
@@ -1222,6 +1221,16 @@ footer {
     height: 292px;
     background: #EC5A61;
     margin-top: 250px; }
+
+.sidebar_active {
+  background: #FFFFFF;
+  color: #EC5A61;
+  font-weight: bold;
+  z-index: 3; }
+  .sidebar_active:hover {
+    background: #FFFFFF;
+    color: #EC5A61;
+    font-weight: bold; }
 
 .sectionServicios3 {
   height: 911px;
@@ -1752,7 +1761,6 @@ footer {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4vw;
     font-weight: 600;
-    color: #FFFFFF;
     margin: 20px 0;
     padding-left: 34px;
     cursor: pointer;
@@ -1760,8 +1768,7 @@ footer {
     width: 18vw;
     line-height: 67px; }
     .linkSidebar:hover {
-      background: #FFFFFF;
-      color: #EC5A61;
+      color: #f08a8f;
       font-weight: bold; }
   .sectBranding {
     display: block; }
@@ -1826,7 +1833,6 @@ footer {
         padding-left: 1.5vw; }
         .projects_digital .digital_mesa .digital_text p {
           font-family: 'Montserrat', sans-serif;
-          width: 140%;
           text-align: justify;
           margin-top: 10px;
           font-size: 1vw; }
@@ -1847,7 +1853,6 @@ footer {
         padding-left: 1.5vw; }
         .projects_digital .digital_exessure .branding_text p {
           font-family: 'Montserrat', sans-serif;
-          width: 140%;
           text-align: justify;
           margin-top: 10px;
           font-size: 1vw; }
