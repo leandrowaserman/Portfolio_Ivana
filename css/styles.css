@@ -293,7 +293,10 @@ footer {
     height: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: 'logo' 'btn' 'links' 'designers'; }
+    grid-template-areas: 'logo'
+ 'btn'
+ 'links'
+ 'designers'; }
     footer .logo_footer {
       margin-top: 20px;
       height: 97px;
@@ -454,7 +457,7 @@ footer {
         .main_top .sectionAyudarte .section2 .brandingHome h6 {
           text-align: center;
           font-size: 20px;
-          font-family: 'Open Sans', sans-serif;
+          font-family: 'DM Serif Display', serif;
           margin-bottom: 25px; }
         .main_top .sectionAyudarte .section2 .brandingHome p {
           text-align: center;
@@ -543,7 +546,8 @@ footer {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      grid-template-areas: 'digital1 digital1' 'branding1 comunicacion1'; }
+      grid-template-areas: 'digital1 digital1'
+ 'branding1 comunicacion1'; }
       .main_top .sectionProyectos .proyectos1 .digital1 {
         grid-area: digital1;
         width: 660px;
@@ -563,7 +567,8 @@ footer {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      grid-template-areas: 'branding2 branding2' 'digital2 comunicacion2'; }
+      grid-template-areas: 'branding2 branding2'
+ 'digital2 comunicacion2'; }
       .main_top .sectionProyectos .proyectos2 .digital2 {
         margin-top: 10px;
         grid-area: digital2;
