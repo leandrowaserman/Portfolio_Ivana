@@ -21,6 +21,7 @@ footer{
             ul{
                 display: flex;
                 flex-flow: row nowrap;
+                justify-content: space-around;
                 list-style: none;
                 li{
                     margin-right: 10px;
@@ -28,11 +29,11 @@ footer{
                     margin-top: 15px;
                     margin-bottom: 15px;
                     cursor: pointer;
-                    i{
+                    svg{
                         background-color: #EC5A61;
                         color: #E8B4B7;
                         border-radius: 100%;
-                        padding: 10px;
+                        padding: 12px;
                         font-size: 30px;
                         transition: 0.2s;
                         &:hover{
@@ -93,19 +94,25 @@ footer{
         ul{
             list-style: none;
             li{
+                display: flex;
+                align-items: center;
                 margin-right: 10px;
                 margin-left: 10px;
                 margin-top: 5px;
                 margin-bottom: 8px;
                 cursor: pointer;
-                i{
+                svg{
                     background-color: #EC5A61;
                     color: #E8B4B7;
                     border-radius: 50%;
-                    padding: 3px;
+                    padding: 4px;
                     font-size: 15px;
                     margin-right: 5px;
                     
+                }
+                a{
+                    text-decoration: none;
+                    color: #000;
                 }
                 p{
                     font-family: 'Montserrat', sans-serif;

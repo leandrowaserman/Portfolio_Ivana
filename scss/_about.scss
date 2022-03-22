@@ -82,7 +82,7 @@
     }
     margin-bottom:100px;
 }
-@media only screen and (max-width:768px){
+@media only screen and (max-width:767px){
     .timeline{
         ul{
             li{
@@ -128,7 +128,7 @@
             &::before{
                 content:'';
                 position: absolute;
-                height: 80%;
+                height: 81%;
                 width: 4px;
                 background-color: black;
                 left: 2.5%;

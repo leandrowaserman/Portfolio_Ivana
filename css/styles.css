@@ -219,6 +219,7 @@ footer {
     footer .contacto_footer .buttons ul {
       display: flex;
       flex-flow: row nowrap;
+      justify-content: space-around;
       list-style: none; }
       footer .contacto_footer .buttons ul li {
         margin-right: 10px;
@@ -226,14 +227,14 @@ footer {
         margin-top: 15px;
         margin-bottom: 15px;
         cursor: pointer; }
-        footer .contacto_footer .buttons ul li i {
+        footer .contacto_footer .buttons ul li svg {
           background-color: #EC5A61;
           color: #E8B4B7;
           border-radius: 100%;
-          padding: 10px;
+          padding: 12px;
           font-size: 30px;
           transition: 0.2s; }
-          footer .contacto_footer .buttons ul li i:hover {
+          footer .contacto_footer .buttons ul li svg:hover {
             background-color: #c24e54; }
     footer .contacto_footer .mail_footer p {
       font-family: 'Montserrat', sans-serif;
@@ -271,18 +272,23 @@ footer {
     footer .design_footer ul {
       list-style: none; }
       footer .design_footer ul li {
+        display: flex;
+        align-items: center;
         margin-right: 10px;
         margin-left: 10px;
         margin-top: 5px;
         margin-bottom: 8px;
         cursor: pointer; }
-        footer .design_footer ul li i {
+        footer .design_footer ul li svg {
           background-color: #EC5A61;
           color: #E8B4B7;
           border-radius: 50%;
-          padding: 3px;
+          padding: 4px;
           font-size: 15px;
           margin-right: 5px; }
+        footer .design_footer ul li a {
+          text-decoration: none;
+          color: #000; }
         footer .design_footer ul li p {
           font-family: 'Montserrat', sans-serif;
           font-size: 16px;
@@ -416,7 +422,9 @@ footer {
         .main_top .section1 .sectionHola .btnSection1:hover {
           background-color: #c24e54; }
         .main_top .section1 .sectionHola .btnSection1 a {
-          text-decoration: none; }
+          text-decoration: none;
+          padding: 15px;
+          color: #FFFFFF; }
         @media (max-width: 1024px) {
           .main_top .section1 .sectionHola .btnSection1 {
             margin-left: 20%; } }
@@ -854,7 +862,7 @@ footer {
         height: 60px;
         margin-bottom: 20px; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .timeline ul li {
     margin-left: 10px;
     transform: translateX(30px);
@@ -891,7 +899,7 @@ footer {
   .timeline ul::before {
     content: '';
     position: absolute;
-    height: 80%;
+    height: 81%;
     width: 4px;
     background-color: black;
     left: 2.5%;
@@ -922,11 +930,11 @@ footer {
       font-size: 2.9vw;
       font-weight: 300;
       line-height: 22px; } }
-    @media only screen and (max-width: 768px) and (min-width: 565px) {
+    @media only screen and (max-width: 767px) and (min-width: 565px) {
       .all_description .description_about .text_about {
         font-size: 2.6vw; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .all_description .description_about .title_about {
       font-family: 'DM Serif Display', serif;
       font-size: 36px;
