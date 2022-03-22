@@ -1,7 +1,6 @@
 .main_top{
     margin-top: 100px;
-    
-
+    overflow-x: hidden;
     .section1{
         width: 100%;
         height: 640px;
@@ -9,7 +8,6 @@
         align-items: center;
         justify-content: space-around;
         margin-bottom: 100px;
-        margin-top: 100px;
 
         .sectionHola{
             padding-left: 40px;
@@ -106,7 +104,10 @@
             justify-content: space-around;
             align-items: center;
             margin: 0 30px;
-
+            .no_link{
+                text-decoration: none;
+                color: black;
+            }
             .brandingHome{
                 background: #E8B4B7;
                 padding: 20px;
@@ -197,10 +198,6 @@
             .proy1_6{
                 width: 656px;
                 height: 283px;
-
-                @media (max-width: 514px) {
-                    
-                }
             }
             .proy2_5{
                 width: 330px;
@@ -230,18 +227,21 @@
 }
 
 
-@media (max-width: 769px){
+@media (max-width: 768px){
     .main_top{
-        margin-top: 10px;
+        margin-top: 0;
   
+
         .section1{
-            margin-top: 20px;
+            margin-top: 50px;
             margin-bottom: 0;
 
             .sectionHola{
+                width: 100vw;
                 
                 .btnSection1{
-                    margin-left: 40%;
+                    margin-left: 0;
+                    margin-right: 0;
                 }
             }
     
@@ -249,6 +249,7 @@
                 display: none;
             }
         }
+
 
         .sectionAyudarte{
             margin-bottom: 50px;
@@ -260,12 +261,14 @@
             .brandingHome{
                 width: 262px;
                 height: 365px;
-                margin: 10px 20px;
+                margin: top 20px;
             }
+        
         }
 
         .sectionProyectos{
-
+            margin: 0;
+            padding: 0;
             .proyectos1{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -275,27 +278,27 @@
         
                 .digital1{
                     grid-area: digital1;
-                    width: 660px;
+                    width: 95%;
                     height: 240px;
                 }
         
                 .branding1{
                     margin-top: 10px;
                     grid-area: branding1;
-                    width: 320px;
+                    width: 90%;
                     height: 240px;
                 }
         
                 .comunicacion1{
                     margin-top: 10px;
                     grid-area: comunicacion1;
-                    width: 320px;
+                    width: 90%;
                     height: 240px;
                 }
             }
 
             .proyectos2{
-                margin-top: 40px;
+
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr 1fr;
@@ -306,20 +309,20 @@
                 .digital2{
                     margin-top: 10px;
                     grid-area: digital2;
-                    width: 320px;
+                    width: 90%;
                     height: 240px;
                 }
         
                 .branding2{
                     grid-area: branding2;
-                    width: 660px;
+                    width: 95%;
                     height: 240px;
                 }
         
                 .comunicacion2{
                     margin-top: 10px;
                     grid-area: comunicacion2;
-                    width: 320px;
+                    width: 90%;
                     height: 240px;
                 }
             }

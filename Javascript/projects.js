@@ -10,11 +10,19 @@ function checkStatusPro(){
     const section1 = document.getElementsByClassName('projects_branding')
     const section2 = document.getElementsByClassName('projects_digital')
     const section3 = document.getElementsByClassName('projects_comunicacion')
+    const digital_sidebar = document.getElementsByClassName('digital_sidebar')
+    const branding_sidebar = document.getElementsByClassName('branding_sidebar')
+    const comunicacion_sidebar = document.getElementsByClassName('comunicacion_sidebar')
     if(localStorage.getItem('projects')=="branding"){
         for(let i=0;i<section1.length;i++){
             section1[i].style.display = "block"
             section2[i].style.display = "none"
             section3[i].style.display = "none"
+        }
+        for(let i=0; i<branding_sidebar.length;i++){
+            branding_sidebar[i].classList.add("sidebar_active")
+            digital_sidebar[i].classList.remove("sidebar_active")
+            comunicacion_sidebar[i].classList.remove("sidebar_active")
         }
     }else if (localStorage.getItem('projects')=="digital"){
         for(let i=0;i<section1.length;i++){
@@ -22,38 +30,48 @@ function checkStatusPro(){
             section2[i].style.display = "block"
             section3[i].style.display = "none"
         }
+        for(let i=0; i<branding_sidebar.length;i++){
+            branding_sidebar[i].classList.remove("sidebar_active")
+            digital_sidebar[i].classList.add("sidebar_active")
+            comunicacion_sidebar[i].classList.remove("sidebar_active")
+        }
     }else if(localStorage.getItem('projects')=="comunicacion"){
         for(let i=0;i<section1.length;i++){
             section1[i].style.display = "none"
             section2[i].style.display = "none"
             section3[i].style.display = "block"
         }
+        for(let i=0; i<branding_sidebar.length;i++){
+            branding_sidebar[i].classList.remove("sidebar_active")
+            digital_sidebar[i].classList.remove("sidebar_active")
+            comunicacion_sidebar[i].classList.add("sidebar_active")
+        }
     }
 }
 
 
 
-brandingEsp.addEventListener('mouseover', () => {
+brandingEsp.addEventListener('click', () => {
     localStorage.setItem("projects","branding")
     checkStatusPro()
 })
-digitalEsp.addEventListener('mouseover', () => {
+digitalEsp.addEventListener('click', () => {
     localStorage.setItem("projects","digital")
     checkStatusPro()
 })
-comunicacionEsp.addEventListener('mouseover', () => {
+comunicacionEsp.addEventListener('click', () => {
     localStorage.setItem("projects","comunicacion")
     checkStatusPro()
 })
-brandingIng.addEventListener('mouseover', () => {
+brandingIng.addEventListener('click', () => {
     localStorage.setItem("projects","branding")
     checkStatusPro()
 })
-digitalIng.addEventListener('mouseover', () => {
+digitalIng.addEventListener('click', () => {
     localStorage.setItem("projects","digital")
     checkStatusPro()
 })
-comunicacionIng.addEventListener('mouseover', () => {
+comunicacionIng.addEventListener('click ', () => {
     localStorage.setItem("projects","comunicacion")
     checkStatusPro()
 })
