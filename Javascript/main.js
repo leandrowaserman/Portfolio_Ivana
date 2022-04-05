@@ -5,7 +5,7 @@ function checkLanguage(){
     const español = document.getElementsByClassName("spanish")
     const footerIngles = document.getElementsByClassName("english_footer")
     const footerEspañol = document.getElementsByClassName("spanish_footer")
-    if(sessionStorage.getItem('language')==1){
+    if(localStorage.getItem('lng')==1){
         for(let i=0;i<español.length;i++){
             español[i].style.display = "block"
             ingles[i].style.display = "none"
@@ -15,7 +15,7 @@ function checkLanguage(){
             footerIngles[i].style.display = "none"
         }
         
-    }else if (sessionStorage.getItem('language')==2){
+    }else if (localStorage.getItem('lng')==2){
         for(let i=0;i<español.length;i++){
             español[i].style.display = "none"
             ingles[i].style.display = "block"
@@ -28,12 +28,12 @@ function checkLanguage(){
     }
 }
 botonEspañol.addEventListener('click', () =>{
-    sessionStorage.setItem("language", 1)
+    localStorage.setItem("lng", 1)
     checkLanguage()
 
 })
 botonIngles.addEventListener('click', () =>{
-    sessionStorage.setItem("language", 2)
+    localStorage.setItem("lng", 2)
     checkLanguage()
 
 })
