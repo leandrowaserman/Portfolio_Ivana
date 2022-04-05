@@ -13,7 +13,7 @@ function checkStatusPro(){
     const digital_sidebar = document.getElementsByClassName('digital_sidebar')
     const branding_sidebar = document.getElementsByClassName('branding_sidebar')
     const comunicacion_sidebar = document.getElementsByClassName('comunicacion_sidebar')
-    if(localStorage.getItem('projects')=="branding"){
+    if(sessionStorage.getItem('projects')=="branding"){
         for(let i=0;i<section1.length;i++){
             section1[i].style.display = "block"
             section2[i].style.display = "none"
@@ -24,7 +24,7 @@ function checkStatusPro(){
             digital_sidebar[i].classList.remove("sidebar_active")
             comunicacion_sidebar[i].classList.remove("sidebar_active")
         }
-    }else if (localStorage.getItem('projects')=="digital"){
+    }else if (sessionStorage.getItem('projects')=="digital"){
         for(let i=0;i<section1.length;i++){
             section1[i].style.display = "none"
             section2[i].style.display = "block"
@@ -35,7 +35,7 @@ function checkStatusPro(){
             digital_sidebar[i].classList.add("sidebar_active")
             comunicacion_sidebar[i].classList.remove("sidebar_active")
         }
-    }else if(localStorage.getItem('projects')=="comunicacion"){
+    }else if(sessionStorage.getItem('projects')=="comunicacion"){
         for(let i=0;i<section1.length;i++){
             section1[i].style.display = "none"
             section2[i].style.display = "none"
@@ -52,26 +52,26 @@ function checkStatusPro(){
 
 
 brandingEsp.addEventListener('click', () => {
-    localStorage.setItem("projects","branding")
+    sessionStorage.setItem("projects","branding")
     checkStatusPro()
 })
 digitalEsp.addEventListener('click', () => {
-    localStorage.setItem("projects","digital")
+    sessionStorage.setItem("projects","digital")
     checkStatusPro()
 })
 comunicacionEsp.addEventListener('click', () => {
-    localStorage.setItem("projects","comunicacion")
+    sessionStorage.setItem("projects","comunicacion")
     checkStatusPro()
 })
 brandingIng.addEventListener('click', () => {
-    localStorage.setItem("projects","branding")
+    sessionStorage.setItem("projects","branding")
     checkStatusPro()
 })
 digitalIng.addEventListener('click', () => {
-    localStorage.setItem("projects","digital")
+    sessionStorage.setItem("projects","digital")
     checkStatusPro()
 })
 comunicacionIng.addEventListener('click ', () => {
-    localStorage.setItem("projects","comunicacion")
+    sessionStorage.setItem("projects","comunicacion")
     checkStatusPro()
 })

@@ -14,7 +14,7 @@ function checkStatus(){
     const digital_sidebar = document.getElementsByClassName('digital_sidebar')
     const branding_sidebar = document.getElementsByClassName('branding_sidebar')
     const comunicacion_sidebar = document.getElementsByClassName('comunicacion_sidebar')
-    if(localStorage.getItem('services')=="branding"){
+    if(sessionStorage.getItem('services')=="branding"){
         for(let i=0;i<section1.length;i++){
             section1[i].style.display = "block"
             section2[i].style.display = "none"
@@ -25,7 +25,7 @@ function checkStatus(){
             digital_sidebar[i].classList.remove("sidebar_active")
             comunicacion_sidebar[i].classList.remove("sidebar_active")
         }
-    }else if (localStorage.getItem('services')=="digital"){
+    }else if (sessionStorage.getItem('services')=="digital"){
         for(let i=0;i<section1.length;i++){
             section1[i].style.display = "none"
             section2[i].style.display = "block"
@@ -36,7 +36,7 @@ function checkStatus(){
             digital_sidebar[i].classList.add("sidebar_active")
             comunicacion_sidebar[i].classList.remove("sidebar_active")
         }
-    }else if(localStorage.getItem('services')=="comunicacion"){
+    }else if(sessionStorage.getItem('services')=="comunicacion"){
         for(let i=0;i<section1.length;i++){
             section1[i].style.display = "none"
             section2[i].style.display = "none"
@@ -53,27 +53,27 @@ function checkStatus(){
 
 
 brandingEsp.addEventListener('click', () => {
-    localStorage.setItem("services","branding")
+    sessionStorage.setItem("services","branding")
     checkStatus()
 })
 digitalEsp.addEventListener('click', () => {
-    localStorage.setItem("services","digital")
+    sessionStorage.setItem("services","digital")
     checkStatus()
 })
 comunicacionEsp.addEventListener('click', () => {
-    localStorage.setItem("services","comunicacion")
+    sessionStorage.setItem("services","comunicacion")
     checkStatus()
 })
 brandingIng.addEventListener('click', () => {
-    localStorage.setItem("services","branding")
+    sessionStorage.setItem("services","branding")
     checkStatus()
 })
 digitalIng.addEventListener('click', () => {
-    localStorage.setItem("services","digital")
+    sessionStorage.setItem("services","digital")
     checkStatus()
 })
 comunicacionIng.addEventListener('click', () => {
-    localStorage.setItem("services","comunicacion")
+    sessionStorage.setItem("services","comunicacion")
     checkStatus()
 })
 
@@ -86,20 +86,20 @@ const botonDigitalIng = document.querySelector('.boton_digital_ing')
 const botonComunicacionIng = document.querySelector('.boton_comunicacion_ing')
 
 botonBrandingEsp.addEventListener('click', () => {
-    localStorage.setItem("projects","branding")
+    sessionStorage.setItem("projects","branding")
 })
 botonDigitalEsp.addEventListener('click', () => {
-    localStorage.setItem("projects","digital")
+    sessionStorage.setItem("projects","digital")
 })
 botonComunicacionEsp.addEventListener('click', () => {
-    localStorage.setItem("projects","comunicacion")
+    sessionStorage.setItem("projects","comunicacion")
 })
 botonBrandingIng.addEventListener('click', () => {
-    localStorage.setItem("projects","branding")
+    sessionStorage.setItem("projects","branding")
 })
 botonDigitalIng.addEventListener('click', () => {
-    localStorage.setItem("projects","digital")
+    sessionStorage.setItem("projects","digital")
 })
 botonComunicacionIng.addEventListener('click', () => {
-    localStorage.setItem("projects","comunicacion")
+    sessionStorage.setItem("projects","comunicacion")
 })
